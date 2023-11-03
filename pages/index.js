@@ -139,7 +139,7 @@ const Index = () => {
           </div>
           
           <div className="contact-index">
-          <img className="QnA-img" src="/how-to-contact-2.png"  onClick={handleContactImageClick1} />
+          <img className="QnA-img" src="/how-to-contact-2.png"  onClick={handleContactImageClick1 } />
           <h3>카카오톡 오픈채팅 문의 </h3>
           </div>
           
@@ -185,25 +185,28 @@ const Index = () => {
           <div className="fac-welcome1"> 1:1 맞춤 디자인 작업으로 고객님들의 스타일을 찾아드립니다. </div>
           <div className="fac-welcome2"> 원하는 사진 위에 마우스를 올리면 사진이 확대됩니다. </div>
           <table class="image-table">
-    <tr>
-      <td><img className="fac-img" src="/1.jpg" alt="이미지 1"/></td>
-      <td><img className="fac-img" src="/2.jpg" alt="이미지 1"/></td>
-      <td><img className="fac-img" src="/3.jpg" alt="이미지 1"/></td>
-    
-      
-    </tr>
-    <tr>
-    <td><img className="fac-img" src="/4.jpg" alt="이미지 1"/></td>
-      <td><img className="fac-img" src="/5.jpg" alt="이미지 1"/></td>
-      <td><img className="fac-img" src="/6.jpg" alt="이미지 1"/></td>
-      
-    </tr>
-    <tr>
-    <td><img className="fac-img" src="/7.jpg" alt="이미지 1"/></td>
-      <td><img className="fac-img" src="/8.jpg" alt="이미지 1"/></td>
-      <td><img className="fac-img" src="/9.jpg" alt="이미지 1"/></td>
-     
-    </tr>
+            <tbody>
+                <tr>
+                  <td><img className="fac-img" src="/1.jpg" alt="이미지 1"/></td>
+                  <td><img className="fac-img" src="/2.jpg" alt="이미지 1"/></td>
+                  <td><img className="fac-img" src="/3.jpg" alt="이미지 1"/></td>
+                
+                  
+                </tr>
+                
+                <tr>
+                <td><img className="fac-img" src="/4.jpg" alt="이미지 1"/></td>
+                  <td><img className="fac-img" src="/5.jpg" alt="이미지 1"/></td>
+                  <td><img className="fac-img" src="/6.jpg" alt="이미지 1"/></td>
+                  
+                </tr>
+                <tr>
+                <td><img className="fac-img" src="/7.jpg" alt="이미지 1"/></td>
+                  <td><img className="fac-img" src="/8.jpg" alt="이미지 1"/></td>
+                  <td><img className="fac-img" src="/9.jpg" alt="이미지 1"/></td>
+                
+                </tr>
+              </tbody>
    
   </table>
         </div>
@@ -252,6 +255,7 @@ const Index = () => {
           padding-top: 70px;
           padding-bottom: 30px;
           display: flex;
+          
         }
         .mapbutton img {
           height: 40px;

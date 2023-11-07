@@ -41,6 +41,7 @@ const Index = () => {
   }, [nextImageIndex]);
 
   const handleContactImageClick1 = () => {
+     console.log("클릭");
     window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
   };
 

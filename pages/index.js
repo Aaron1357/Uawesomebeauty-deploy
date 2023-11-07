@@ -40,10 +40,10 @@ const Index = () => {
     };
   }, [nextImageIndex]);
 
-  const handleContactImageClick1 = () => {
-     console.log("클릭");
-    window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
-  };
+  // const handleContactImageClick1 = () => {
+  //    console.log("클릭");
+  //   window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
+  // };
 
   const handleContactImageClick2 = () => {
     window.open(
@@ -182,15 +182,18 @@ const Index = () => {
                 <h3>0507-1318-5745</h3>
               </div>
 
+              <a href="https://google.com" target="_blank">
+
               <div className="contact-index">
                 <img
                   className="QnA-img"
                   src="/how-to-contact-2.png"
-                  onClick={handleContactImageClick1}
+                  // onClick={handleContactImageClick1}
                 />
                 <h3>카카오톡 오픈채팅 문의 </h3>
               </div>
-
+              </a>       
+              {/* 여기에요 */}
               <div className="contact-index">
                 <img
                   className="QnA-img"

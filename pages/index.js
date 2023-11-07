@@ -5,7 +5,7 @@ const Index = () => {
   const [nextImageIndex, setNextImageIndex] = useState(1);
   const [showDescription, setShowDescription] = useState(false);
   const [showDescription2, setShowDescription2] = useState(false);
-
+// 1700x1040
   const handleDescriptionToggle = () => {
     setShowDescription(!showDescription);
     setShowDescription2(false); // 오른쪽 설명 섹션을 닫습니다.
@@ -40,31 +40,8 @@ const Index = () => {
     };
   }, [nextImageIndex]);
 
-  // const handleContactImageClick1 = () => {
-  //    console.log("클릭");
-  //   window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
-  // };
-
-  const handleContactImageClick2 = () => {
-    window.open(
-      "https://instagram.com/uawesomebeauty?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
-      "_blank"
-    ); // 문의 링크 관련 코드
-  };
-
-  const handleContactImageClick3 = () => {
-    window.open(
-      "https://talk.naver.com/ct/w4022r?frm=mnmb&frm=nmb_lpn#nafullscreen",
-      "_blank"
-    ); // 문의 링크 관련 코드
-  };
-
-  const handleContactImageClick4 = () => {
-    window.open("https://kko.to/HuOyG6LutS", "_blank"); // 카카오맵 링크 관련 코드
-  };
-  const handleContactImageClick5 = () => {
-    window.open("https://naver.me/5Y1I47Yk", "_blank"); // 네이버지도 링크 관련 코드
-  };
+ 
+ 
 
   //kko.to/5FGA0BbCLs
   https: useEffect(() => {
@@ -136,12 +113,12 @@ const Index = () => {
           <br />
           <br />
           <br />
+          <br />  
           <br />
           <br />
           <br />
           <br />
-          <br />
-          <br />
+          <br /> 
           <br />
           <br />
           <br />
@@ -182,35 +159,39 @@ const Index = () => {
                 <h3>0507-1318-5745</h3>
               </div>
 
-              <a href="https://google.com" target="_blank">
-
               <div className="contact-index">
+              <a href="https://open.kakao.com/o/sXWLm5Pf" target="_blank">
                 <img
                   className="QnA-img"
                   src="/how-to-contact-2.png"
                   // onClick={handleContactImageClick1}
                 />
                 <h3>카카오톡 오픈채팅 문의 </h3>
-              </div>
               </a>       
-              {/* 여기에요 */}
-              <div className="contact-index">
-                <img
-                  className="QnA-img"
-                  src="/how-to-contact-3.png"
-                  onClick={handleContactImageClick2}
-                />
-                <h3>인스타그램 DM 문의 </h3>
               </div>
 
               <div className="contact-index">
+              <a href="https://instagram.com/uawesomebeauty?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank">
+                <img
+                  className="QnA-img"
+                  src="/how-to-contact-3.png"
+                />
+                <h3>인스타그램 DM 문의 </h3>
+              </a>
+              </div>
+
+              <div className="contact-index">
+              <a href="https://talk.naver.com/ct/w4022r?frm=mnmb&frm=nmb_lpn#nafullscreen" target="_blank">
                 <img
                   className="QnA-img"
                   src="/how-to-contact-4.png"
-                  onClick={handleContactImageClick3}
+                  
                 />
                 <h3> 네이버 톡톡 문의 </h3>
+              </a>
               </div>
+
+
             </div>
           </div>
           <div className="map-con" id="map-sec">
@@ -222,10 +203,10 @@ const Index = () => {
               </div>
               <div>
                 <div className="mapbutton">
-                  <img src="카카오맵.png" onClick={handleContactImageClick4} />
+                  <img src="카카오맵.png"  />
                   <img
                     src="네이버지도.png"
-                    onClick={handleContactImageClick5}
+                   
                   />
                 </div>
                 <div className="shopname-index">
@@ -366,6 +347,11 @@ const Index = () => {
          font-weight: 200;
          src: url("/fonts/EliceDXNeolli-Light.ttf") format("truetype");
 }
+
+        a{
+          text-decoration-line: none;
+
+        }
         .mainPhoto {
           max-height: 89%;
           width: 100%;
@@ -411,7 +397,7 @@ const Index = () => {
           background: mistyrose;
          
           width: 100vw;
-          height: 89vh;
+          height: 100vh;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -425,8 +411,8 @@ const Index = () => {
           width: 100vw;
         }
         .QnA-img{
-           width: 50%;
-           height: 30%;
+           width: 120px;
+           height: 120px;
            padding-left: 60px;
            padding-right: 60px;
            padding-bottom: 20px;
@@ -462,6 +448,7 @@ const Index = () => {
           text-align: center;
           flex-direction: column;
           font-family: Elice-light;
+          
         }
         .map-con{
  

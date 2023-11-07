@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 export default function Header() {
   return (
-    <div>
+    <div>  
       <div className="main-head">
         <div className="Logo-holder">
           <img src="/Logo.png" className="Logo" /> {/*로고 이미지 */}
@@ -35,7 +35,7 @@ export default function Header() {
             to="QnA-con" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={90} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> Reservation </div>

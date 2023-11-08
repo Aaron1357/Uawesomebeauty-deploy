@@ -25,42 +25,6 @@ const Index = () => {
     };
   }, [nextImageIndex]);
 
-  const handleDescriptionToggle = () => {
-    setShowDescription(!showDescription);
-    setShowDescription2(false);
-  };
-
-  const handleDescriptionToggle2 = () => {
-    setShowDescription2(!showDescription2);
-    setShowDescription(false);
-  };
-
-  const handleContactImageClick1 = () => {
-    window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
-  };
-
-  const handleContactImageClick2 = () => {
-    window.open(
-      "https://instagram.com/uawesomebeauty?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
-      "_blank"
-    ); // 문의 링크 관련 코드
-  };
-
-  const handleContactImageClick3 = () => {
-    window.open(
-      "https://talk.naver.com/ct/w4022r?frm=mnmb&frm=nmb_lpn#nafullscreen",
-      "_blank"
-    ); // 문의 링크 관련 코드
-  };
-
-  const handleContactImageClick4 = () => {
-    window.open("https://kko.to/HuOyG6LutS", "_blank"); // 카카오맵 링크 관련 코드
-  };
-
-  const handleContactImageClick5 = () => {
-    window.open("https://naver.me/5Y1I47Yk", "_blank"); // 네이버지도 링크 관련 코드
-  };
-
   useEffect(() => {
     // 카카오 지도 스크립트 로딩 부분
     const kakaoMapScript = document.createElement("script");
@@ -98,6 +62,51 @@ const Index = () => {
 
     kakaoMapScript.addEventListener("load", onLoadKakaoAPI);
   }, []);
+
+  useEffect(() => {
+    // 문의 링크 1 클릭 이벤트
+    const handleContactImageClick1 = () => {
+      window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank");
+    };
+
+    // 문의 링크 2 클릭 이벤트
+    const handleContactImageClick2 = () => {
+      window.open(
+        "https://instagram.com/uawesomebeauty?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
+        "_blank"
+      );
+    };
+
+    // 문의 링크 3 클릭 이벤트
+    const handleContactImageClick3 = () => {
+      window.open(
+        "https://talk.naver.com/ct/w4022r?frm=mnmb&frm=nmb_lpn#nafullscreen",
+        "_blank"
+      );
+    };
+
+    // 카카오맵 링크 클릭 이벤트
+    const handleContactImageClick4 = () => {
+      window.open("https://kko.to/HuOyG6LutS", "_blank");
+    };
+
+    // 네이버지도 링크 클릭 이벤트
+    const handleContactImageClick5 = () => {
+      window.open("https://naver.me/5Y1I47Yk", "_blank");
+    };
+  }, []);
+
+  const handleDescriptionToggle = () => {
+    setShowDescription(!showDescription);
+    setShowDescription2(false);
+  };
+
+  const handleDescriptionToggle2 = () => {
+    setShowDescription2(!showDescription2);
+    setShowDescription(false);
+  };
+
+  
 
 
   return (

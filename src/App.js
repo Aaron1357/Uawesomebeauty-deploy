@@ -297,7 +297,7 @@ function App() {
     //이미지관련
     // 이미지를 4초마다 변경하는 타이머를 설정
     const interval = setInterval(() => {
-      setNextImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setNextImageIndex((prevIndex) => (prevIndex + 1) % 2);
       // 현재 이미지를 페이드아웃하고 다음 이미지를 페이드인
       document.querySelector(".mainPhoto").style.opacity = 0;
       // 이미지가 페이드아웃되면서 뒤의 이미지가 보이도록 z-index 조절
@@ -342,21 +342,10 @@ function App() {
     window.open("https://naver.me/5Y1I47Yk", "_blank"); // 네이버지도 링크 관련 코드
   };
 
-
-  // useEffect(()=>{
-  //   var container = document.getElementById('map');
-  //   var options = {
-  //     center: new window.kakao.maps.LatLng(37.365264512305174, 127.10676860117488),
-  //     level: 3
-  //   };
-  //   var map = new window.kakao.maps.Map(container, options);
-  //   }, []);
-
-
    
 
   //  kko.to/5FGA0BbCLs
-   https: useEffect(() => {
+  useEffect(() => {
     // 카카오 스크립트
     const kakaoMapScript = document.createElement("script");
     kakaoMapScript.async = false;
@@ -408,7 +397,7 @@ function App() {
     <div className="App">
       <div className="main-head">
         <div className="Logo-holder">
-          <img src="/Logo.png" className="Logo" /> {/*로고 이미지 */}
+          <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
         </div>
         <div className="menu-holder">
           <Link
@@ -463,8 +452,8 @@ function App() {
     
       <div>
         <div>
-          <img className="mainPhoto" src={images[currentImageIndex]} />
-          <img className="mainPhoto" src={images[nextImageIndex]} />
+          <img className="mainPhoto"  alt="img" src={images[currentImageIndex]} />
+          <img className="mainPhoto"  alt="img" src={images[nextImageIndex]} />
         </div>
         <div className="howtocome">
           <br />
@@ -525,13 +514,13 @@ function App() {
 
             <div className="QnA-list">
               <div className="contact-index">
-                <img className="QnA-img" src="/how-to-contact--1.png" />
+                <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
                 <h3>0507-1318-5745</h3>
               </div>
 
               <div className="contact-index">
                 <img
-                  className="QnA-img"
+                  className="QnA-img" alt="img"
                   src="/how-to-contact-2.png"
                   onClick={handleContactImageClick1}
                 />
@@ -540,7 +529,7 @@ function App() {
 
               <div className="contact-index">
                 <img
-                  className="QnA-img"
+                  className="QnA-img" alt="img"
                   src="/how-to-contact-3.png"
                   onClick={handleContactImageClick2}
                 />
@@ -549,7 +538,7 @@ function App() {
 
               <div className="contact-index">
                 <img
-                  className="QnA-img"
+                  className="QnA-img" alt="img"
                   src="/how-to-contact-4.png"
                   onClick={handleContactImageClick3}
                 />
@@ -566,8 +555,8 @@ function App() {
               </div>
               <div>
                 <div className="mapbutton">
-                  <img src="카카오맵.png" onClick={handleContactImageClick4} />
-                  <img
+                  <img  alt="img" src="카카오맵.png" onClick={handleContactImageClick4} />
+                  <img  alt="img"
                     src="네이버지도.png"
                     onClick={handleContactImageClick5}
                   />
@@ -615,7 +604,7 @@ function App() {
           <div className="designer-list">
             <div className="contact-index">
               <img
-                className="designer-img"
+                className="designer-img" alt="img"
                 src="/logo_name.jpg"
                 onClick={handleDescriptionToggle}
               />
@@ -624,7 +613,7 @@ function App() {
 
             <div className="contact-index">
               <img
-                className="designer-img"
+                className="designer-img" alt="img"
                 src="/logo_name.jpg"
                 onClick={handleDescriptionToggle2}
               />

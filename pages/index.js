@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 const images = ["/place1.png", "/place2.png"]; // 이미지 파일 경로 배열
 const Index = () => {
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [nextImageIndex, setNextImageIndex] = useState(1);
   const [showDescription, setShowDescription] = useState(false);

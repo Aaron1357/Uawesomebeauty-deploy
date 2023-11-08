@@ -1,53 +1,115 @@
 import React, { useState, useEffect } from "react";
 const images = ["/place1.png", "/place2.png"]; // 이미지 파일 경로 배열
-
 const Index = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [nextImageIndex, setNextImageIndex] = useState(1);
   const [showDescription, setShowDescription] = useState(false);
   const [showDescription2, setShowDescription2] = useState(false);
 
-  useEffect(() => {
-    // 이미지 변경을 처리하는 부분
-    const interval = setInterval(() => {
-      setNextImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      document.querySelector(".mainPhoto").style.opacity = 0;
-      document.querySelector(".mainPhoto").style.zIndex = 1;
-      setTimeout(() => {
-        setCurrentImageIndex(nextImageIndex);
-        document.querySelector(".mainPhoto").style.opacity = 1;
-        document.querySelector(".mainPhoto").style.zIndex = 2;
-      }, 500);
-    }, 4000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [nextImageIndex]);
-
-  useEffect(() => {
-    // 클릭 이벤트 핸들러 함수를 정의하고 사용할 링크를 설정합니다.
-    const handleContactImageClick = (link) => {
-      window.open(link, "_blank");
-    };
-
-    // 클릭 이벤트 핸들러 함수를 이용해 각 이미지에 클릭 이벤트를 부여합니다.
-    document.querySelector(".QnA-img1").addEventListener("click", () => handleContactImageClick("https://open.kakao.com/o/sXWLm5Pf"));
-    document.querySelector(".QnA-img2").addEventListener("click", () => handleContactImageClick("https://instagram.com/uawesomebeauty?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"));
-    document.querySelector(".QnA-img3").addEventListener("click", () => handleContactImageClick("https://talk.naver.com/ct/w4022r?frm=mnmb&frm=nmb_lpn#nafullscreen"));
-  }, []);
-
   const handleDescriptionToggle = () => {
     setShowDescription(!showDescription);
-    setShowDescription2(false);
+    setShowDescription2(false); // 오른쪽 설명 섹션을 닫습니다.
   };
 
   const handleDescriptionToggle2 = () => {
     setShowDescription2(!showDescription2);
-    setShowDescription(false);
+    setShowDescription(false); // 오른쪽 설명 섹션을 닫습니다.
   };
 
+  useEffect(() => {
+    //이미지관련
+    // 이미지를 4초마다 변경하는 타이머를 설정
+    const interval = setInterval(() => {
+      setNextImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      // 현재 이미지를 페이드아웃하고 다음 이미지를 페이드인
+      document.querySelector(".mainPhoto").style.opacity = 0;
+      // 이미지가 페이드아웃되면서 뒤의 이미지가 보이도록 z-index 조절
+      document.querySelector(".mainPhoto").style.zIndex = 1;
+      setTimeout(() => {
+        setCurrentImageIndex(nextImageIndex);
+        document.querySelector(".mainPhoto").style.opacity = 1;
+        // 이미지가 페이드인하면서 현재 이미지를 보이도록 z-index 조절
+        document.querySelector(".mainPhoto").style.zIndex = 2;
+      }, 500); // 투명도를 복원하기 전 0.5초 대기
+    }, 4000);
 
+    return () => {
+      //이미지관련
+      // 컴포넌트 언마운트 시 타이머를 정리
+      clearInterval(interval);
+    };
+  }, [nextImageIndex]);
+
+  const handleContactImageClick1 = () => {
+    window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
+  };
+
+  const handleContactImageClick2 = () => {
+    window.open(
+      "https://instagram.com/uawesomebeauty?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
+      "_blank"
+    ); // 문의 링크 관련 코드
+  };
+
+  const handleContactImageClick3 = () => {
+    window.open(
+      "https://talk.naver.com/ct/w4022r?frm=mnmb&frm=nmb_lpn#nafullscreen",
+      "_blank"
+    ); // 문의 링크 관련 코드
+  };
+
+  const handleContactImageClick4 = () => {
+    window.open("https://kko.to/HuOyG6LutS", "_blank"); // 카카오맵 링크 관련 코드
+  };
+  const handleContactImageClick5 = () => {
+    window.open("https://naver.me/5Y1I47Yk", "_blank"); // 네이버지도 링크 관련 코드
+  };
+
+  //kko.to/5FGA0BbCLs
+  https: useEffect(() => {
+    // 카카오 스크립트
+    const kakaoMapScript = document.createElement("script");
+    kakaoMapScript.async = false;
+    kakaoMapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=b8a7199c97ab09d827a105e52849c736&autoload=false`;
+    document.head.appendChild(kakaoMapScript);
+
+    const onLoadKakaoAPI = () => {
+      window.kakao.maps.load(() => {
+        var container = document.getElementById("map");
+        var options = {
+          center: new window.kakao.maps.LatLng(37.7344, 127.0818),
+          level: 4,
+        };
+        var map = new window.kakao.maps.Map(container, options);
+
+        // 마커가 표시될 위치입니다
+        var markerPosition = new window.kakao.maps.LatLng(37.7344, 127.0818);
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+          position: markerPosition,
+        });
+
+        var infowindow = new kakao.maps.InfoWindow({
+          content:
+            '<div style="width:80px; text-align:center;padding:5px 34px; font-size: 13px;font-weight: bold; cursor: pointer;">유어썸뷰티</div>',
+        });
+
+        // 마커 클릭 이벤트 처리
+        kakao.maps.event.addListener(marker, "click", function () {
+          // 유어썸뷰티 링크 열기
+          window.open("https://kko.to/HuOyG6LutS", "_blank");
+        });
+
+        infowindow.open(map, marker);
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+      });
+    };
+
+    kakaoMapScript.addEventListener("load", onLoadKakaoAPI);
+  }, []);
 
   return (
     <div>
@@ -121,27 +183,27 @@ const Index = () => {
 
               <div className="contact-index">
                 <img
-                  className="QnA-img1"
+                  className="QnA-img"
                   src="/how-to-contact-2.png"
-                 
+                  onClick={handleContactImageClick1}
                 />
                 <h3>카카오톡 오픈채팅 문의 </h3>
               </div>
 
               <div className="contact-index">
                 <img
-                  className="QnA-img2"
+                  className="QnA-img"
                   src="/how-to-contact-3.png"
-                  
+                  onClick={handleContactImageClick2}
                 />
                 <h3>인스타그램 DM 문의 </h3>
               </div>
 
               <div className="contact-index">
                 <img
-                  className="QnA-img3"
+                  className="QnA-img"
                   src="/how-to-contact-4.png"
-                 
+                  onClick={handleContactImageClick3}
                 />
                 <h3> 네이버 톡톡 문의 </h3>
               </div>
@@ -156,10 +218,10 @@ const Index = () => {
               </div>
               <div>
                 <div className="mapbutton">
-                  {/* <img src="카카오맵.png" onClick={handleContactImageClick4} /> */}
+                  <img src="카카오맵.png" onClick={handleContactImageClick4} />
                   <img
                     src="네이버지도.png"
-                    // onClick={handleContactImageClick5}
+                    onClick={handleContactImageClick5}
                   />
                 </div>
                 <div className="shopname-index">
@@ -287,9 +349,9 @@ const Index = () => {
         </table>
       </div>
 
-    
+      <style jsx global>{`
 
-       
+
          @font-face {
          font-family: "Elice";
          font-weight: 200;
@@ -359,66 +421,6 @@ const Index = () => {
           width: 100vw;
         }
         .QnA-img{
-           width: 50%;
-           height: 30%;
-           padding-left: 60px;
-           padding-right: 60px;
-           padding-bottom: 20px;
-           
-           &:hover {
-            color: red;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            transform: scale( 1.2, 1.2 ) ;
-            transition: transform 0.5s ease;
-          }
-        }
-        .QnA-img1{
-           width: 50%;
-           height: 30%;
-           padding-left: 60px;
-           padding-right: 60px;
-           padding-bottom: 20px;
-           
-           &:hover {
-            color: red;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            transform: scale( 1.2, 1.2 ) ;
-            transition: transform 0.5s ease;
-          }
-        }
-        .QnA-img2{
-           width: 50%;
-           height: 30%;
-           padding-left: 60px;
-           padding-right: 60px;
-           padding-bottom: 20px;
-           
-           &:hover {
-            color: red;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            transform: scale( 1.2, 1.2 ) ;
-            transition: transform 0.5s ease;
-          }
-        }
-        .QnA-img3{
-           width: 50%;
-           height: 30%;
-           padding-left: 60px;
-           padding-right: 60px;
-           padding-bottom: 20px;
-           
-           &:hover {
-            color: red;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            transform: scale( 1.2, 1.2 ) ;
-            transition: transform 0.5s ease;
-          }
-        }
-        .QnA-img2{
            width: 50%;
            height: 30%;
            padding-left: 60px;

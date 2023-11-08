@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Header from "@/components/Header";
+
+
+import Index from ".";
 export default function App({Component , pageProps}) {
   return (
     <div>
@@ -8,7 +11,8 @@ export default function App({Component , pageProps}) {
       <Head>
         <title>유어썸뷰티 | About Us</title>
       </Head>
-
+      
+      
     </div>
   );
 }

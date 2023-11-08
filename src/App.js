@@ -1,7 +1,282 @@
+import { Link } from "react-scroll";
+import styled from "styled-components";
 import React, { useState, useEffect } from "react";
-const images = ["/place1.png", "/place2.png"]; // 이미지 파일 경로 배열
-const Index = () => {
+// import { Map } from 'react-kakao-maps-sdk';
+
+const Test = styled.div`
+@font-face {
+  font-family: "Elice";
+  font-weight: 200;
+  src: url("/fonts/EliceDXNeolli-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Elice-light";
+  font-weight: 200;
+  src: url("/fonts/EliceDXNeolli-Light.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-head {
+  display: flex;
+  background-color: lavenderblush;
+  width: 100%;
+  height: 11%;
+  position: fixed; /* 헤더를 고정시킴 */
+  top: 0; /* 화면 상단에 고정 */
+  z-index: 1000; /* 다른 콘텐츠 위에 표시 */
+}
+.Logo-holder {
+  padding-left: 500px;
+  padding-right: 300px;
+}
+.Logo {
+  width: 190px;
+  height: 110px;
+}
+.menu-holder {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.menu {
+  font-size: 18px;
+  color: black;
+  font-family: Elice-light;
+  &:hover {
+    color: red;
+    opacity: 0.5;
+    transition: color 0.5s;
+  }
+}
+
+.mainPhoto {
+  max-height: 89%;
+  width: 100%;
+  height: 89%;
+  position: absolute;
+  transition: opacity 0.5s; /* 투명도에 0.5초 동안의 트랜지션 적용 */
+
+  margin-top: 110px;
+}
+
+.howtocome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
+}
+.mapbutton {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  display: flex;
+}
+.mapbutton img {
+  height: 40px;
+  border-radius: 10px; /* 둥글게 만들기 */
+  margin: 10px; /* 이미지 사이의 간격 조절 */
+  &:hover {
+    color: red;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
+}
+.shopname {
+  font-weight: bold;
+}
+.QnA-con {
+  
+  padding-top: 100px;
+  background: mistyrose;
+ 
+  width: 100vw;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+.QnA-list{
+  display: flex;
+  align -items: center;
+  justify-content:center;
+  width: 100vw;
+}
+.QnA-img{
+   width: 50%;
+   height: 30%;
+   padding-left: 60px;
+   padding-right: 60px;
+   padding-bottom: 20px;
+   
+   &:hover {
+    color: red;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    transform: scale( 1.2, 1.2 ) ;
+    transition: transform 0.5s ease;
+  }
+}
+.QnA-welcome1{
+   padding-top : 30px;
+   padding-bottom: 20px;
+   font-weight:bold;
+   font-family: Elice;
+   
+}
+.QnA-welcome2{
+   padding-top : 10px;
+   padding-bottom: 130px;
+   font-weight:bold;
+   font-family: Elice;
+}
+.QnA-index{
+  font-family: Elice;
+  padding-bottom: 60px;
+}
+.contact-index{
+  word-break;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-family: Elice-light;
+}
+.map-con{
+
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content: center;
+   height: 89vh;
+}
+.shopname-index{
+  font-family:Elice;
+  text-align: center;
+}
+.designer-con {
+  
+  padding-top: 100px;
+  background: mistyrose;
+ 
+  width: 100vw;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+}
+.designer-list {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+}
+
+.designer-list > * {
+    margin-right: 30px; /* 요소 사이의 간격을 20px로 설정 */
+}
+
+  /* 마지막 요소의 오른쪽 마진을 없애기 위한 스타일 */
+.designer-list > :last-child {
+    margin-right: 0;
+}
+
+.designer-img{
+   width: 100%;
+   height: 20%;
+   border-radius: 20%;
+   
+   &:hover {
+    color: red;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    
+    transition: transform 0.5s ease;
+  }
+}
+.designer-welcome1{
+   padding-top : 30px;
+   padding-bottom: 20px;
+   font-weight:bold;
+   font-family: Elice;
+   
+}
+.designer-welcome2{
+   padding-top : 10px;
+   padding-bottom: 50px;
+   font-weight:bold;
+   font-family: Elice;
+}
+.designer-index{
+  font-family: Elice;
+  padding-bottom: 60px;
+}
+.plusdescribe{
+ display: flex;
+}
+.describe {
+  width: 400px;
+  position: absolute; /* 절대 위치 설정 */
+
+transform: translateX(-130%); 
+}
+.describe2{
+  width: 400px;
+  position: absolute; /* 절대 위치 설정 */
+
+transform: translateX(170%); 
+}
+
+
+
+.fac-index{
+  padding-top: 30px;
+  font-family: Elice;
+  padding-bottom: 60px;
+}
+.inner-fac-con {
+  padding-top: 100px;
+  background: white;
+  width: 100vw;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fac-welcome1{
+   padding-top : 0px;
+   padding-bottom: 20px;
+   font-family: Elice-light;
+}
+.fac-welcome2{
+   padding-top : 10px;
+   padding-bottom: 70px;
+   font-family: Elice-light;
+}
+.fac-img {
+  width: 150px; /* 이미지의 너비를 200px로 설정 */
+  height: 150px; /* 이미지의 높이를 200px로 설정 */
+  padding : 7px;
+  border-radius: 10%;
+  &:hover {
+    transform: scale( 2.0, 2.0 ) ;
+    transition: transform 0.5s ease;
+  }
+
+
+`;
+
+function App() {
+
+  const images = ["/place1.png", "/place2.png"]; // 이미지 파일 경로 배열
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [nextImageIndex, setNextImageIndex] = useState(1);
   const [showDescription, setShowDescription] = useState(false);
@@ -16,6 +291,7 @@ const Index = () => {
     setShowDescription2(!showDescription2);
     setShowDescription(false); // 오른쪽 설명 섹션을 닫습니다.
   };
+
 
   useEffect(() => {
     //이미지관련
@@ -66,8 +342,21 @@ const Index = () => {
     window.open("https://naver.me/5Y1I47Yk", "_blank"); // 네이버지도 링크 관련 코드
   };
 
-  //kko.to/5FGA0BbCLs
-  https: useEffect(() => {
+
+  // useEffect(()=>{
+  //   var container = document.getElementById('map');
+  //   var options = {
+  //     center: new window.kakao.maps.LatLng(37.365264512305174, 127.10676860117488),
+  //     level: 3
+  //   };
+  //   var map = new window.kakao.maps.Map(container, options);
+  //   }, []);
+
+
+   
+
+  //  kko.to/5FGA0BbCLs
+   https: useEffect(() => {
     // 카카오 스크립트
     const kakaoMapScript = document.createElement("script");
     kakaoMapScript.async = false;
@@ -87,17 +376,17 @@ const Index = () => {
         var markerPosition = new window.kakao.maps.LatLng(37.7344, 127.0818);
 
         // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
+        var marker = new window.kakao.maps.Marker({
           position: markerPosition,
         });
 
-        var infowindow = new kakao.maps.InfoWindow({
+        var infowindow = new window.kakao.maps.InfoWindow({
           content:
             '<div style="width:80px; text-align:center;padding:5px 34px; font-size: 13px;font-weight: bold; cursor: pointer;">유어썸뷰티</div>',
         });
 
         // 마커 클릭 이벤트 처리
-        kakao.maps.event.addListener(marker, "click", function () {
+        window.kakao.maps.event.addListener(marker, "click", function () {
           // 유어썸뷰티 링크 열기
           window.open("https://kko.to/HuOyG6LutS", "_blank");
         });
@@ -112,8 +401,66 @@ const Index = () => {
     kakaoMapScript.addEventListener("load", onLoadKakaoAPI);
   }, []);
 
+
+
   return (
-    <div>
+    <Test>
+    <div className="App">
+      <div className="main-head">
+        <div className="Logo-holder">
+          <img src="/Logo.png" className="Logo" /> {/*로고 이미지 */}
+        </div>
+        <div className="menu-holder">
+          <Link
+            to="us-con" // 섹션의 ID를 여기에 입력
+            spy={true}
+            smooth={true}
+            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            duration={500}
+          >
+            <div className="menu"> About us </div>
+          </Link>
+          {/* <div className="menu"> About us </div> 메뉴 1 */}
+        </div>
+        <div className="menu-holder">
+          <Link
+            to="inner-sec" // 섹션의 ID를 여기에 입력
+            spy={true}
+            smooth={true}
+            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            duration={500}
+          >
+            <div className="menu"> Gallary </div>
+          </Link>
+          {/* <div className="menu"> Gallary </div> 메뉴 2 */}
+        </div>
+        <div className="menu-holder">
+          <Link
+            to="QnA-con" // 섹션의 ID를 여기에 입력
+            spy={true}
+            smooth={true}
+            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            duration={500}
+          >
+            <div className="menu"> Reservation </div>
+          </Link>
+          {/* <div className="menu"> Reservation  </div> 메뉴 3 */}
+        </div>
+        <div className="menu-holder">
+          <Link
+            to="map-sec" // 섹션의 ID를 여기에 입력
+            spy={true}
+            smooth={true}
+            offset={-90} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            duration={500}
+          >
+            <div className="menu"> Location </div>
+          </Link>
+          {/* <div className="menu"> Location </div> 메뉴 4 */}
+        </div>
+      </div>
+    </div>
+    
       <div>
         <div>
           <img className="mainPhoto" src={images[currentImageIndex]} />
@@ -311,7 +658,7 @@ const Index = () => {
           {" "}
           원하는 사진 위에 마우스를 올리면 사진이 확대됩니다.{" "}
         </div>
-        <table class="image-table">
+        <table className="image-table">
           <tbody>
             <tr>
               <td>
@@ -346,248 +693,14 @@ const Index = () => {
                 <img className="fac-img" src="/9.jpg" alt="이미지 1" />
               </td>
             </tr>
-          </tbody>
+            </tbody>
         </table>
       </div>
 
-      <style jsx global>{`
 
 
-         @font-face {
-         font-family: "Elice";
-         font-weight: 200;
-         src: url("/fonts/EliceDXNeolli-Medium.ttf") format("truetype");
-}
-         @font-face {
-         font-family: "Elice-light";
-         font-weight: 200;
-         src: url("/fonts/EliceDXNeolli-Light.ttf") format("truetype");
-}
-        .mainPhoto {
-          max-height: 89%;
-          width: 100%;
-          height: 89%;
-          position: absolute;
-          transition: opacity 0.5s; /* 투명도에 0.5초 동안의 트랜지션 적용 */
-
-          margin-top: 110px;
-        }
-
-        .howtocome {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .root {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          
-        }
-        .mapbutton {
-          padding-top: 70px;
-          padding-bottom: 30px;
-          display: flex;
-        }
-        .mapbutton img {
-          height: 40px;
-          border-radius: 10px; /* 둥글게 만들기 */
-          margin: 10px; /* 이미지 사이의 간격 조절 */
-          &:hover {
-            color: red;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-          }
-        }
-        .shopname {
-          font-weight: bold;
-        }
-        .QnA-con {
-          
-          padding-top: 100px;
-          background: mistyrose;
-         
-          width: 100vw;
-          height: 89vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          
-        }
-        .QnA-list{
-          display: flex;
-          align -items: center;
-          justify-content:center;
-          width: 100vw;
-        }
-        .QnA-img{
-           width: 50%;
-           height: 30%;
-           padding-left: 60px;
-           padding-right: 60px;
-           padding-bottom: 20px;
-           
-           &:hover {
-            color: red;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            transform: scale( 1.2, 1.2 ) ;
-            transition: transform 0.5s ease;
-          }
-        }
-        .QnA-welcome1{
-           padding-top : 30px;
-           padding-bottom: 20px;
-           font-weight:bold;
-           font-family: Elice;
-           
-        }
-        .QnA-welcome2{
-           padding-top : 10px;
-           padding-bottom: 130px;
-           font-weight:bold;
-           font-family: Elice;
-        }
-        .QnA-index{
-          font-family: Elice;
-          padding-bottom: 60px;
-        }
-        .contact-index{
-          word-break;
-          display: flex;
-          text-align: center;
-          flex-direction: column;
-          font-family: Elice-light;
-        }
-        .map-con{
- 
-           display: flex;
-           flex-direction:column;
-           align-items: center;
-           justify-content: center;
-           height: 89vh;
-        }
-        .shopname-index{
-          font-family:Elice;
-          text-align: center;
-        }
-        .designer-con {
-          
-          padding-top: 100px;
-          background: mistyrose;
-         
-          width: 100vw;
-          height: 89vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          
-        }
-        .designer-list {
-            display: flex;
-            align-items: center;
-            width: 30vw;
-        }
-
-        .designer-list > * {
-            margin-right: 30px; /* 요소 사이의 간격을 20px로 설정 */
-        }
-
-          /* 마지막 요소의 오른쪽 마진을 없애기 위한 스타일 */
-        .designer-list > :last-child {
-            margin-right: 0;
-        }
-
-        .designer-img{
-           width: 100%;
-           height: 20%;
-           border-radius: 20%;
-           
-           &:hover {
-            color: red;
-            opacity: 0.5;
-            transition: opacity 0.5s;
-            
-            transition: transform 0.5s ease;
-          }
-        }
-        .designer-welcome1{
-           padding-top : 30px;
-           padding-bottom: 20px;
-           font-weight:bold;
-           font-family: Elice;
-           
-        }
-        .designer-welcome2{
-           padding-top : 10px;
-           padding-bottom: 50px;
-           font-weight:bold;
-           font-family: Elice;
-        }
-        .designer-index{
-          font-family: Elice;
-          padding-bottom: 60px;
-        }
-        .plusdescribe{
-         display: flex;
-        }
-        .describe {
-          width: 400px;
-          position: absolute; /* 절대 위치 설정 */
-        
-        transform: translateX(-130%); 
-        }
-        .describe2{
-          width: 400px;
-          position: absolute; /* 절대 위치 설정 */
-        
-        transform: translateX(170%); 
-        }
-      
-
-
-        .fac-index{
-          padding-top: 30px;
-          font-family: Elice;
-          padding-bottom: 60px;
-        }
-        .inner-fac-con {
-          padding-top: 100px;
-          background: white;
-          width: 100vw;
-          height: 89vh;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .fac-welcome1{
-           padding-top : 0px;
-           padding-bottom: 20px;
-           font-family: Elice-light;
-        }
-        .fac-welcome2{
-           padding-top : 10px;
-           padding-bottom: 70px;
-           font-family: Elice-light;
-        }
-        .fac-img {
-          width: 150px; /* 이미지의 너비를 200px로 설정 */
-          height: 150px; /* 이미지의 높이를 200px로 설정 */
-          padding : 7px;
-          border-radius: 10%;
-          &:hover {
-            transform: scale( 2.0, 2.0 ) ;
-            transition: transform 0.5s ease;
-          }
-
-
-
-
-
-      `}</style>
-    </div>
+    </Test>
   );
-};
-export default Index;
+}
+
+export default App;

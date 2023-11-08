@@ -287,7 +287,7 @@ const Index = () => {
         </table>
       </div>
 
-      <style jsx global>{`
+    
 
        
          @font-face {

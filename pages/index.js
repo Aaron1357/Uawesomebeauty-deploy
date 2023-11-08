@@ -289,13 +289,7 @@ const Index = () => {
 
       <style jsx global>{`
 
-        .bablerc {
-          "plugins": [
-            [
-              "babel-plugin-styled-components"
-            ]
-          ]
-        }
+       
          @font-face {
          font-family: "Elice";
          font-weight: 200;

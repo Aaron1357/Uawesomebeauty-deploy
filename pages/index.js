@@ -1,44 +1,39 @@
 import React, { useState, useEffect } from "react";
 const images = ["/place1.png", "/place2.png"]; // 이미지 파일 경로 배열
+
 const Index = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [nextImageIndex, setNextImageIndex] = useState(1);
   const [showDescription, setShowDescription] = useState(false);
   const [showDescription2, setShowDescription2] = useState(false);
 
-  const handleDescriptionToggle = () => {
-    setShowDescription(!showDescription);
-    setShowDescription2(false); // 오른쪽 설명 섹션을 닫습니다.
-  };
-
-  const handleDescriptionToggle2 = () => {
-    setShowDescription2(!showDescription2);
-    setShowDescription(false); // 오른쪽 설명 섹션을 닫습니다.
-  };
-
   useEffect(() => {
-    //이미지관련
-    // 이미지를 4초마다 변경하는 타이머를 설정
+    // 이미지 변경을 처리하는 부분
     const interval = setInterval(() => {
       setNextImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      // 현재 이미지를 페이드아웃하고 다음 이미지를 페이드인
       document.querySelector(".mainPhoto").style.opacity = 0;
-      // 이미지가 페이드아웃되면서 뒤의 이미지가 보이도록 z-index 조절
       document.querySelector(".mainPhoto").style.zIndex = 1;
       setTimeout(() => {
         setCurrentImageIndex(nextImageIndex);
         document.querySelector(".mainPhoto").style.opacity = 1;
-        // 이미지가 페이드인하면서 현재 이미지를 보이도록 z-index 조절
         document.querySelector(".mainPhoto").style.zIndex = 2;
-      }, 500); // 투명도를 복원하기 전 0.5초 대기
+      }, 500);
     }, 4000);
 
     return () => {
-      //이미지관련
-      // 컴포넌트 언마운트 시 타이머를 정리
       clearInterval(interval);
     };
   }, [nextImageIndex]);
+
+  const handleDescriptionToggle = () => {
+    setShowDescription(!showDescription);
+    setShowDescription2(false);
+  };
+
+  const handleDescriptionToggle2 = () => {
+    setShowDescription2(!showDescription2);
+    setShowDescription(false);
+  };
 
   const handleContactImageClick1 = () => {
     window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
@@ -61,13 +56,13 @@ const Index = () => {
   const handleContactImageClick4 = () => {
     window.open("https://kko.to/HuOyG6LutS", "_blank"); // 카카오맵 링크 관련 코드
   };
+
   const handleContactImageClick5 = () => {
     window.open("https://naver.me/5Y1I47Yk", "_blank"); // 네이버지도 링크 관련 코드
   };
 
-  //kko.to/5FGA0BbCLs
-  https: useEffect(() => {
-    // 카카오 스크립트
+  useEffect(() => {
+    // 카카오 지도 스크립트 로딩 부분
     const kakaoMapScript = document.createElement("script");
     kakaoMapScript.async = false;
     kakaoMapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=b8a7199c97ab09d827a105e52849c736&autoload=false`;
@@ -82,34 +77,28 @@ const Index = () => {
         };
         var map = new window.kakao.maps.Map(container, options);
 
-        // 마커가 표시될 위치입니다
         var markerPosition = new window.kakao.maps.LatLng(37.7344, 127.0818);
 
-        // 마커를 생성합니다
-        var marker = new kakao.maps.Marker({
+        var marker = new window.kakao.maps.Marker({
           position: markerPosition,
         });
 
-        var infowindow = new kakao.maps.InfoWindow({
-          content:
-            '<div style="width:80px; text-align:center;padding:5px 34px; font-size: 13px;font-weight: bold; cursor: pointer;">유어썸뷰티</div>',
+        var infowindow = new window.kakao.maps.InfoWindow({
+          content: '<div style="width:80px; text-align:center;padding:5px 34px; font-size: 13px;font-weight: bold; cursor: pointer;">유어썸뷰티</div>',
         });
 
-        // 마커 클릭 이벤트 처리
-        kakao.maps.event.addListener(marker, "click", function () {
-          // 유어썸뷰티 링크 열기
+        window.kakao.maps.event.addListener(marker, "click", function () {
           window.open("https://kko.to/HuOyG6LutS", "_blank");
         });
 
         infowindow.open(map, marker);
-
-        // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
       });
     };
 
     kakaoMapScript.addEventListener("load", onLoadKakaoAPI);
   }, []);
+
 
   return (
     <div>

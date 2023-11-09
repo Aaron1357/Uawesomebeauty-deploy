@@ -5,6 +5,8 @@ import { useMediaQuery } from "react-responsive";
 
 
 const HeadisDesktop = styled.div`
+
+
 @font-face {
   font-family: "Elice";
   font-weight: 200;
@@ -31,7 +33,7 @@ body {
 }
 
 .Logo-holder {
-  padding-left: 500px;
+  padding-left: 30%;
   padding-right: 300px;
 }
 .Logo {
@@ -83,7 +85,7 @@ body {
 }
 
 .Logo-holder {
-  padding-left: 500px;
+  padding-left: 30%;
   padding-right: 300px;
 }
 .Logo {
@@ -125,7 +127,7 @@ body {
 
 .main-head {
   display: flex;
-  background-color: red;
+  background-color: blue;
   width: 100%;
   height: 110px;
   position: fixed; /* 헤더를 고정시킴 */
@@ -134,7 +136,7 @@ body {
 }
 
 .Logo-holder {
-  padding-left: 500px;
+  padding-left: 30%;
   padding-right: 300px;
 }
 .Logo {

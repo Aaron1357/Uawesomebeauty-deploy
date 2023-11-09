@@ -127,29 +127,30 @@ body {
 
 .main-head {
   display: flex;
+  flex-direction: column;
   background-color: blue;
   width: 100%;
-  height: 110px;
+  height: 160px;
   position: fixed; /* 헤더를 고정시킴 */
   top: 0; /* 화면 상단에 고정 */
   z-index: 1000; /* 다른 콘텐츠 위에 표시 */
 }
 
 .Logo-holder {
-  padding-left: 0%;
-  padding-right: 0%;
+  align-items: center;
+  
 }
 .Logo {
-  width: 190px;
-  height: 110px;
+  width: 180px;
+  height: 100px;
 }
 .menu-holder {
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
 }
 .menu {
-  font-size: 18px;
+  font-size: 15px;
   color: black;
   font-family: Elice-light;
   &:hover {
@@ -158,6 +159,11 @@ body {
     transition: color 0.5s;
   }
 }
+.menu-2 {
+  display: flex;
+  width: 100%
+  justify-content: space-around;
+
 `;
 
 
@@ -542,6 +548,7 @@ function App() {
         <div className="Logo-holder">
           <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
         </div>
+        
         <div className="menu-holder">
           <Link
             to="us-con" // 섹션의 ID를 여기에 입력
@@ -656,6 +663,7 @@ function App() {
         <div className="Logo-holder">
           <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
         </div>
+        <div className="menu-2">
         <div className="menu-holder">
           <Link
             to="us-con" // 섹션의 ID를 여기에 입력
@@ -704,6 +712,7 @@ function App() {
           </Link>
           {/* <div className="menu"> Location </div> 메뉴 4 */}
         </div>
+      </div>
       </div>
     </div>
     </HeadisMobile>)}

@@ -153,7 +153,7 @@ body {
   padding: 10px;
 }
 .menu {
-  font-size: 15px;
+  font-size: 13px;
   color: black;
   font-family: Elice-light;
   &:hover {

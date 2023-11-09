@@ -30,6 +30,7 @@ body {
   position: fixed; /* 헤더를 고정시킴 */
   top: 0; /* 화면 상단에 고정 */
   z-index: 1000; /* 다른 콘텐츠 위에 표시 */
+  margin-left: -7px;
 }
 
 .Logo-holder {
@@ -62,7 +63,7 @@ body {
   height: 89%;
   position: absolute;
   transition: opacity 0.5s; /* 투명도에 0.5초 동안의 트랜지션 적용 */
-
+  margin-left: -9px;
   margin-top: 110px;
 }
 

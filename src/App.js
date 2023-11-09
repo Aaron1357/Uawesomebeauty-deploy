@@ -58,13 +58,13 @@ body {
 }
 
 .mainPhoto {
-  max-height: 89%;
+  
   width: 100%;
   height: 89%;
   position: absolute;
   transition: opacity 0.5s; /* 투명도에 0.5초 동안의 트랜지션 적용 */
   margin-left: -9px;
-  margin-top: 110px;
+  margin-top: 102px;
 }
 
 .howtocome {
@@ -96,12 +96,18 @@ body {
 .shopname {
   font-weight: bold;
 }
+
+.blank{
+  height: 89vh;
+
+}
+
 .QnA-con {
   
-  padding-top: 100px;
+  padding-top: 200px;
   background: mistyrose;
  
-  width: 100vw;
+  width: 100.8%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -113,7 +119,7 @@ body {
   display: flex;
   align -items: center;
   justify-content:center;
-  width: 100vw;
+  width: 100%;
 }
 .QnA-img{
    width: 50%;
@@ -155,7 +161,7 @@ body {
   font-family: Elice-light;
 }
 .map-con{
-
+  width: 100.8%;
    display: flex;
    flex-direction:column;
    align-items: center;
@@ -168,10 +174,10 @@ body {
 }
 .designer-con {
   
-  padding-top: 100px;
+  margin-left: -0.3%;
+  padding-top: 140px;
   background: mistyrose;
- 
-  width: 100vw;
+  width: 100.8%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -182,7 +188,8 @@ body {
 .designer-list {
     display: flex;
     align-items: center;
-    width: 30vw;
+    width: 30%;
+    margin-left: 35%;
 }
 
 .designer-list > * {
@@ -208,10 +215,12 @@ body {
   }
 }
 .designer-welcome1{
-   padding-top : 30px;
-   padding-bottom: 20px;
-   font-weight:bold;
+   padding-top : 15px;
+   padding-bottom: 60px;
+   
    font-family: Elice;
+
+
    
 }
 .designer-welcome2{
@@ -228,16 +237,16 @@ body {
  display: flex;
 }
 .describe {
-  width: 400px;
+  width: 40%;
   position: absolute; /* 절대 위치 설정 */
-
-transform: translateX(-130%); 
+  text-align: center;
+transform: translateX(-8%); 
 }
 .describe2{
-  width: 400px;
+  width: 40%;
   position: absolute; /* 절대 위치 설정 */
-
-transform: translateX(170%); 
+  text-align: center;
+transform: translateX(150%); 
 }
 
 
@@ -248,9 +257,9 @@ transform: translateX(170%);
   padding-bottom: 60px;
 }
 .inner-fac-con {
-  padding-top: 100px;
+    padding-top: 100px;
   background: white;
-  width: 100vw;
+  width: 100%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -263,7 +272,7 @@ transform: translateX(170%);
 }
 .fac-welcome2{
    padding-top : 10px;
-   padding-bottom: 70px;
+   padding-bottom: 35px;
    font-family: Elice-light;
 }
 .fac-img {
@@ -297,6 +306,7 @@ body {
 }
 
 .main-head {
+  margin-left: -7px;
   display: flex;
   background-color: red;
   width: 100%;
@@ -308,19 +318,21 @@ body {
 
 .Logo-holder {
   padding-left: 0%;
-  padding-right: 0%;
+  padding-right: 10%;
 }
 .Logo {
   width: 190px;
   height: 110px;
 }
 .menu-holder {
+  
   display: flex;
   align-items: center;
   padding: 30px;
 }
 .menu {
-  font-size: 18px;
+  
+  font-size: 16px;
   color: black;
   font-family: Elice-light;
   &:hover {
@@ -332,15 +344,14 @@ body {
 
 
 
-
 .mainPhoto {
-  max-height: 89%;
+  
   width: 100%;
-  height: 89%;
+  height: 55%;
   position: absolute;
   transition: opacity 0.5s; /* 투명도에 0.5초 동안의 트랜지션 적용 */
-
-  margin-top: 110px;
+  margin-left: -9px;
+  margin-top: 102px;
 }
 
 .howtocome {
@@ -372,12 +383,18 @@ body {
 .shopname {
   font-weight: bold;
 }
+
+.blank{
+  height: 66vh;
+
+}
+
 .QnA-con {
   
-  padding-top: 100px;
+  padding-top: 200px;
   background: mistyrose;
  
-  width: 100vw;
+  width: 100.8%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -389,7 +406,7 @@ body {
   display: flex;
   align -items: center;
   justify-content:center;
-  width: 100vw;
+  width: 100%;
 }
 .QnA-img{
    width: 50%;
@@ -431,7 +448,7 @@ body {
   font-family: Elice-light;
 }
 .map-con{
-
+  width: 100.8%;
    display: flex;
    flex-direction:column;
    align-items: center;
@@ -444,10 +461,10 @@ body {
 }
 .designer-con {
   
-  padding-top: 100px;
+  margin-left: -0.3%;
+  padding-top: 140px;
   background: mistyrose;
- 
-  width: 100vw;
+  width: 100.8%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -458,7 +475,8 @@ body {
 .designer-list {
     display: flex;
     align-items: center;
-    width: 30vw;
+    width: 30%;
+    margin-left: 35%;
 }
 
 .designer-list > * {
@@ -484,10 +502,12 @@ body {
   }
 }
 .designer-welcome1{
-   padding-top : 30px;
-   padding-bottom: 20px;
-   font-weight:bold;
+   padding-top : 15px;
+   padding-bottom: 60px;
+   
    font-family: Elice;
+
+
    
 }
 .designer-welcome2{
@@ -504,18 +524,17 @@ body {
  display: flex;
 }
 .describe {
-  width: 400px;
+  width: 40%;
   position: absolute; /* 절대 위치 설정 */
-
-transform: translateX(-130%); 
+  text-align: center;
+transform: translateX(-8%); 
 }
 .describe2{
-  width: 400px;
+  width: 40%;
   position: absolute; /* 절대 위치 설정 */
-
-transform: translateX(170%); 
+  text-align: center;
+transform: translateX(150%); 
 }
-
 
 
 
@@ -525,9 +544,9 @@ transform: translateX(170%);
   padding-bottom: 60px;
 }
 .inner-fac-con {
-  padding-top: 100px;
+    padding-top: 100px;
   background: white;
-  width: 100vw;
+  width: 100%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -540,7 +559,7 @@ transform: translateX(170%);
 }
 .fac-welcome2{
    padding-top : 10px;
-   padding-bottom: 70px;
+   padding-bottom: 35px;
    font-family: Elice-light;
 }
 .fac-img {
@@ -581,6 +600,7 @@ body {
   top: 0; /* 화면 상단에 고정 */
   z-index: 1000; /* 다른 콘텐츠 위에 표시 */
   align-items: center;
+  margin-left: -7px;
   
 }
 
@@ -615,226 +635,266 @@ body {
   justify-content: space-around;
 
 }
-  .mainPhoto {
-    max-height: 89%;
-    width: 100%;
-    height: 89%;
-    position: absolute;
-    transition: opacity 0.5s; /* 투명도에 0.5초 동안의 트랜지션 적용 */
+
+
+.mainPhoto {
   
-    margin-top: 110px;
-  }
+  width: 100%;
+  height: 37%;
+  position: absolute;
+  transition: opacity 0.5s; /* 투명도에 0.5초 동안의 트랜지션 적용 */
+  margin-left: -9px;
+  margin-top: 140px;
+}
+
+.howtocome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
-  .howtocome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.mapbutton {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapbutton img {
+  height: 40px;
+  border-radius: 10px; /* 둥글게 만들기 */
+  margin: 10px; /* 이미지 사이의 간격 조절 */
+  &:hover {
+    color: red;
+    opacity: 0.5;
+    transition: opacity 0.5s;
   }
-  .root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  .mapbutton {
-    padding-top: 70px;
-    padding-bottom: 30px;
-    display: flex;
-  }
-  .mapbutton img {
-    height: 40px;
-    border-radius: 10px; /* 둥글게 만들기 */
-    margin: 10px; /* 이미지 사이의 간격 조절 */
-    &:hover {
-      color: red;
-      opacity: 0.5;
-      transition: opacity 0.5s;
-    }
-  }
-  .shopname {
-    font-weight: bold;
-  }
-  .QnA-con {
-    
-    padding-top: 100px;
-    background: mistyrose;
+}
+.shopname {
+  font-weight: bold;
+}
+
+.blank{
+  height: 51vh;
+
+}
+
+.QnA-con {
+  
+  padding-top: 200px;
+  background: mistyrose;
+  width: 100.8%;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.QnA-list{
+  display: flex;
+  align -items: center;
+  justify-content:center;
+  width: 100%;
+}
+.QnA-img{
+   width: 50%;
+   height: 30%;
+   padding-left: 48px;
+   padding-top: 20px;
+    padding-bottom: 20px;
    
-    width: 100vw;
-    height: 89vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   &:hover {
+    color: red;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    transform: scale( 1.2, 1.2 ) ;
+    transition: transform 0.5s ease;
+  }
+}
+
+.QnA-img2{
+  width: 50%;
+  height: 30%;
+  padding-left: 48px;
+  padding-top: 20px;
+   padding-bottom: 20px;
   
-    
-  }
-  .QnA-list{
-    display: flex;
-    align -items: center;
-    justify-content:center;
-    width: 100vw;
-  }
-  .QnA-img{
-     width: 50%;
-     height: 30%;
-     padding-left: 60px;
-     padding-right: 60px;
-     padding-bottom: 20px;
-     
-     &:hover {
-      color: red;
-      opacity: 0.5;
-      transition: opacity 0.5s;
-      transform: scale( 1.2, 1.2 ) ;
-      transition: transform 0.5s ease;
-    }
-  }
-  .QnA-welcome1{
-     padding-top : 30px;
-     padding-bottom: 20px;
-     font-weight:bold;
-     font-family: Elice;
-     
-  }
-  .QnA-welcome2{
-     padding-top : 10px;
-     padding-bottom: 130px;
-     font-weight:bold;
-     font-family: Elice;
-  }
-  .QnA-index{
-    font-family: Elice;
-    padding-bottom: 60px;
-  }
-  .contact-index{
-    word-break;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    font-family: Elice-light;
-  }
-  .map-con{
-  
-     display: flex;
-     flex-direction:column;
-     align-items: center;
-     justify-content: center;
-     height: 89vh;
-  }
-  .shopname-index{
-    font-family:Elice;
-    text-align: center;
-  }
-  .designer-con {
-    
-    padding-top: 100px;
-    background: mistyrose;
+  &:hover {
+   color: red;
+   opacity: 0.5;
+   transition: opacity 0.5s;
+   transform: scale( 1.2, 1.2 ) ;
+   transition: transform 0.5s ease;
+ }
+}
+
+.QnA-welcome1{
+   padding-top : 30px;
+   padding-bottom: 10px;
+   font-weight:bold;
+   font-family: Elice;
    
-    width: 100vw;
-    height: 89vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+.QnA-welcome2{
+   padding-top : 10px;
+   padding-bottom: 60px;
+   font-weight:bold;
+   font-family: Elice;
+}
+.QnA-index{
+  font-family: Elice;
+  padding-bottom: 20px;
+}
+.QnA-divide1{
+width: 100%;
+}
+.QnA-divide2{
+  width: 100%;
+  }
+
+.contact-index{
+ 
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-family: Elice-light;
+  font-size: 12px;
   
-    
-  }
-  .designer-list {
-      display: flex;
-      align-items: center;
-      width: 30vw;
-  }
-  
-  .designer-list > * {
-      margin-right: 30px; /* 요소 사이의 간격을 20px로 설정 */
-  }
-  
-    /* 마지막 요소의 오른쪽 마진을 없애기 위한 스타일 */
-  .designer-list > :last-child {
-      margin-right: 0;
-  }
-  
-  .designer-img{
-     width: 100%;
-     height: 20%;
-     border-radius: 20%;
-     
-     &:hover {
-      color: red;
-      opacity: 0.5;
-      transition: opacity 0.5s;
-      
-      transition: transform 0.5s ease;
-    }
-  }
-  .designer-welcome1{
-     padding-top : 30px;
-     padding-bottom: 20px;
-     font-weight:bold;
-     font-family: Elice;
-     
-  }
-  .designer-welcome2{
-     padding-top : 10px;
-     padding-bottom: 50px;
-     font-weight:bold;
-     font-family: Elice;
-  }
-  .designer-index{
-    font-family: Elice;
-    padding-bottom: 60px;
-  }
-  .plusdescribe{
+}
+
+
+.map-con{
+  width: 100.8%;
    display: flex;
-  }
-  .describe {
-    width: 400px;
-    position: absolute; /* 절대 위치 설정 */
+   flex-direction:column;
+   align-items: center;
+   justify-content: center;
+   height: 89vh;
+}
+.shopname-index{
+  font-family:Elice;
+  text-align: center;
+}
+.designer-con {
   
-  transform: translateX(-130%); 
-  }
-  .describe2{
-    width: 400px;
-    position: absolute; /* 절대 위치 설정 */
-  
-  transform: translateX(170%); 
-  }
-  
+  margin-top: 0px;
+  margin-left: -0.3%;
+  padding-top: 140px;
+  background: mistyrose;
+  width: 100.8%;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   
-  
-  .fac-index{
-    padding-top: 30px;
-    font-family: Elice;
-    padding-bottom: 60px;
-  }
-  .inner-fac-con {
-    padding-top: 100px;
-    background: white;
-    width: 100vw;
-    height: 89vh;
+}
+.designer-list {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.designer-list > * {
+    margin-right: 30px; /* 요소 사이의 간격을 20px로 설정 */
+}
+
+  /* 마지막 요소의 오른쪽 마진을 없애기 위한 스타일 */
+.designer-list > :last-child {
+    margin-right: 0;
+}
+
+.designer-img{
+   width: 100%;
+   height: 20%;
+   border-radius: 20%;
+   
+   &:hover {
+    color: red;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    
+    transition: transform 0.5s ease;
   }
-  .fac-welcome1{
-     padding-top : 0px;
-     padding-bottom: 20px;
-     font-family: Elice-light;
-  }
-  .fac-welcome2{
-     padding-top : 10px;
-     padding-bottom: 70px;
-     font-family: Elice-light;
-  }
-  .fac-img {
-    width: 150px; /* 이미지의 너비를 200px로 설정 */
-    height: 150px; /* 이미지의 높이를 200px로 설정 */
-    padding : 7px;
-    border-radius: 10%;
-    &:hover {
-      transform: scale( 2.0, 2.0 ) ;
-      transition: transform 0.5s ease;
-    }
+}
+.designer-welcome1{
+   padding-top : 15px;
+   padding-bottom: 60px;
+   
+   font-family: Elice;
+
+
+   
+}
+.designer-welcome2{
+   padding-top : 10px;
+   padding-bottom: 50px;
+   font-weight:bold;
+   font-family: Elice;
+}
+.designer-index{
+  font-family: Elice;
+  padding-bottom: 60px;
+}
+.plusdescribe{
+ display: flex;
+}
+.describe {
+  width: 40%;
+  position: absolute; /* 절대 위치 설정 */
+  text-align: center;
+transform: translateX(-8%); 
+}
+.describe2{
+  width: 40%;
+  position: absolute; /* 절대 위치 설정 */
+  text-align: center;
+transform: translateX(150%); 
+}
+
+
+
+.fac-index{
+  padding-top: 30px;
+  font-family: Elice;
+  padding-bottom: 60px;
   
+}
+.inner-fac-con {
+  padding-top: 100px;
+  background: white;
+  width: 100%;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+.fac-welcome1{
+   padding-top : 0px;
+   padding-bottom: 20px;
+   font-family: Elice-light;
+}
+.fac-welcome2{
+   padding-top : 10px;
+   padding-bottom: 35px;
+   font-family: Elice-light;
+}
+.fac-img {
+  width: 150px; /* 이미지의 너비를 200px로 설정 */
+  height: 150px; /* 이미지의 높이를 200px로 설정 */
+  padding : 1px;
+  border-radius: 10%;
+  &:hover {
+    transform: scale( 2.0, 2.0 ) ;
+    transition: transform 0.5s ease;
+  }
 
 `;
 
@@ -842,6 +902,13 @@ body {
 
 
 function App() {
+
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
+
 
   const isDesktop = useMediaQuery({
     query: "(min-width:1024px)",
@@ -962,11 +1029,14 @@ function App() {
 
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
+
+        window.addEventListener('resize', handleResize);
+
       });
     };
 
     kakaoMapScript.addEventListener("load", onLoadKakaoAPI);
-  }, []);
+  }, [width]);
 
 
 
@@ -984,7 +1054,7 @@ function App() {
             to="us-con" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-8} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> About us </div>
@@ -996,7 +1066,7 @@ function App() {
             to="inner-sec" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-10} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> Gallary </div>
@@ -1036,133 +1106,19 @@ function App() {
           <img className="mainPhoto"  alt="img" src={images[nextImageIndex]} />
         </div>
         <div className="howtocome">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <div className="blank"></div>
+         
 
-          <div className="QnA-con">
-            <h1 className="QnA-index">| Q & A |</h1>
-            
-            <div className="QnA-welcome1">
-              {" "}
-              궁금하신 모든 사항은 편하게 문의주세요!{" "}
-            </div>
-            <div className="QnA-welcome2">
-              {" "}
-              아래의 여러가지 문의 방법을 소개 드립니다.{" "}
-            </div>
-
-            <div className="QnA-list">
-              <div className="contact-index">
-                <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
-                <h3>0507-1318-5745</h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-2.png"
-                  onClick={handleContactImageClick1}
-                />
-                <h3>카카오톡 오픈채팅 문의 </h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-3.png"
-                  onClick={handleContactImageClick2}
-                />
-                <h3>인스타그램 DM 문의 </h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-4.png"
-                  onClick={handleContactImageClick3}
-                />
-                <h3> 네이버 톡톡 문의 </h3>
-              </div>
-            </div>
-          </div>
-          <div className="map-con" id="map-sec">
-            <h1 className="QnA-index">| Location |</h1>
-            {/* <div> </div> */}
-            <div className="root">
-              <div>
-                <div id="map" style={{ width: "400px", height: "300px" }}></div>
-              </div>
-              <div>
-                <div className="mapbutton">
-                  <img  alt="img" src="카카오맵.png" onClick={handleContactImageClick4} />
-                  <img  alt="img"
-                    src="네이버지도.png"
-                    onClick={handleContactImageClick5}
-                  />
-                </div>
-                <div className="shopname-index">
-                  <div className="shopname">유어썸뷰티</div> <br></br>
-                  <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="designer-con" id="us-con">
+          <div className="designer-con" id="us-con">
         <h1 className="designer-index">| About us |</h1>
-        <div className="designer-welcome1">
-          {" "}
-          의정부네일 용현동네일 의정부속눈썹펌 유어썸뷰티{" "}
-        </div>
+        
         <div className="designer-welcome2">
           {" "}
           🌷1 : 1 맞춤 디자인시술 100% 예약제🌷{" "}
         </div>
         <div className="designer-welcome2"> open 10:00 close 20:00 </div>
 
-        <div className="designer-welcome2">
+        <div className="designer-welcome1">
           {" "}
           사진을 클릭하면 간단한 프로필을 확인할 수 있습니다.{" "}
         </div>
@@ -1177,8 +1133,8 @@ function App() {
               -KSPPRO 풋레게 교육 이수 <br />
               -독일 할라쉐카 왁싱 마스터 교육 수료 <br />
               -K뷰티전문가연합회(FKBP) 정회원 <br />
-              -제12회 국제바디아트콘테스트 그랑프리 마스터즈 수상 <br />
-              -제12회 국제바디아트콘테스트 대회 수석 심사위원 <br />
+              -국제바디아트콘테스트 그랑프리 마스터즈 수상 <br />
+              -국제바디아트콘테스트 대회 수석 심사위원 <br />
             </div>
           )}
           <div className="designer-list">
@@ -1265,23 +1221,98 @@ function App() {
             </tbody>
         </table>
       </div>
+
+          <div className="QnA-con">
+            <h1 className="QnA-index">| Reservation |</h1>
+            
+            <div className="QnA-welcome1">
+              {" "}
+              궁금하신 모든 사항은 편하게 문의주세요!{" "}
+            </div>
+            <div className="QnA-welcome2">
+              {" "}
+              아래의 여러가지 문의 방법을 소개 드립니다.{" "}
+            </div>
+
+            <div className="QnA-list">
+              <div className="contact-index">
+                <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
+                <h3>0507-1318-5745</h3>
+              </div>
+
+              <div className="contact-index">
+                <img
+                  className="QnA-img" alt="img"
+                  src="/how-to-contact-2.png"
+                  onClick={handleContactImageClick1}
+                />
+                <h3>카카오톡 오픈채팅 문의 </h3>
+              </div>
+
+              <div className="contact-index">
+                <img
+                  className="QnA-img" alt="img"
+                  src="/how-to-contact-3.png"
+                  onClick={handleContactImageClick2}
+                />
+                <h3>인스타그램 DM 문의 </h3>
+              </div>
+
+              <div className="contact-index">
+                <img
+                  className="QnA-img" alt="img"
+                  src="/how-to-contact-4.png"
+                  onClick={handleContactImageClick3}
+                />
+                <h3> 네이버 톡톡 문의 </h3>
+              </div>
+            </div>
+          </div>
+          <div className="map-con" id="map-sec">
+            <h1 className="QnA-index">| Location |</h1>
+            {/* <div> </div> */}
+            <div className="root">
+              <div>
+                <div id="map" style={{ width: "400px", height: "300px" }}></div>
+              </div>
+              <div>
+                <div className="mapbutton">
+                  <img  alt="img" src="카카오맵.png" onClick={handleContactImageClick4} />
+                  <img  alt="img"
+                    src="네이버지도.png"
+                    onClick={handleContactImageClick5}
+                  />
+                </div>
+                <div className="shopname-index">
+                  <div className="shopname">유어썸뷰티</div> <br></br>
+                  <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+     
 
     </HeadisDesktop>)}
 
 
 
     {isTablet && (<HeadisTablet>
-        <div className="App">
+      <div className="App">
       <div className="main-head">
         <div className="Logo-holder">
           <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
         </div>
+        
         <div className="menu-holder">
           <Link
             to="us-con" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-8} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> About us </div>
@@ -1293,7 +1324,7 @@ function App() {
             to="inner-sec" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-10} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> Gallary </div>
@@ -1327,140 +1358,25 @@ function App() {
       </div>
     </div>
 
-
     <div>
         <div>
           <img className="mainPhoto"  alt="img" src={images[currentImageIndex]} />
           <img className="mainPhoto"  alt="img" src={images[nextImageIndex]} />
         </div>
         <div className="howtocome">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <div className="blank"></div>
+         
 
-          <div className="QnA-con">
-            <h1 className="QnA-index">| Q & A |</h1>
-            
-            <div className="QnA-welcome1">
-              {" "}
-              궁금하신 모든 사항은 편하게 문의주세요!{" "}
-            </div>
-            <div className="QnA-welcome2">
-              {" "}
-              아래의 여러가지 문의 방법을 소개 드립니다.{" "}
-            </div>
-
-            <div className="QnA-list">
-              <div className="contact-index">
-                <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
-                <h3>0507-1318-5745</h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-2.png"
-                  onClick={handleContactImageClick1}
-                />
-                <h3>카카오톡 오픈채팅 문의 </h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-3.png"
-                  onClick={handleContactImageClick2}
-                />
-                <h3>인스타그램 DM 문의 </h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-4.png"
-                  onClick={handleContactImageClick3}
-                />
-                <h3> 네이버 톡톡 문의 </h3>
-              </div>
-            </div>
-          </div>
-          <div className="map-con" id="map-sec">
-            <h1 className="QnA-index">| Location |</h1>
-            {/* <div> </div> */}
-            <div className="root">
-              <div>
-                <div id="map" style={{ width: "400px", height: "300px" }}></div>
-              </div>
-              <div>
-                <div className="mapbutton">
-                  <img  alt="img" src="카카오맵.png" onClick={handleContactImageClick4} />
-                  <img  alt="img"
-                    src="네이버지도.png"
-                    onClick={handleContactImageClick5}
-                  />
-                </div>
-                <div className="shopname-index">
-                  <div className="shopname">유어썸뷰티</div> <br></br>
-                  <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="designer-con" id="us-con">
+          <div className="designer-con" id="us-con">
         <h1 className="designer-index">| About us |</h1>
-        <div className="designer-welcome1">
-          {" "}
-          의정부네일 용현동네일 의정부속눈썹펌 유어썸뷰티{" "}
-        </div>
+        
         <div className="designer-welcome2">
           {" "}
           🌷1 : 1 맞춤 디자인시술 100% 예약제🌷{" "}
         </div>
         <div className="designer-welcome2"> open 10:00 close 20:00 </div>
 
-        <div className="designer-welcome2">
+        <div className="designer-welcome1">
           {" "}
           사진을 클릭하면 간단한 프로필을 확인할 수 있습니다.{" "}
         </div>
@@ -1475,8 +1391,8 @@ function App() {
               -KSPPRO 풋레게 교육 이수 <br />
               -독일 할라쉐카 왁싱 마스터 교육 수료 <br />
               -K뷰티전문가연합회(FKBP) 정회원 <br />
-              -제12회 국제바디아트콘테스트 그랑프리 마스터즈 수상 <br />
-              -제12회 국제바디아트콘테스트 대회 수석 심사위원 <br />
+              -국제바디아트콘테스트 그랑프리 마스터즈 수상 <br />
+              -국제바디아트콘테스트 대회 수석 심사위원 <br />
             </div>
           )}
           <div className="designer-list">
@@ -1562,6 +1478,77 @@ function App() {
             </tr>
             </tbody>
         </table>
+      </div>
+
+          <div className="QnA-con">
+            <h1 className="QnA-index">| Reservation |</h1>
+            
+            <div className="QnA-welcome1">
+              {" "}
+              궁금하신 모든 사항은 편하게 문의주세요!{" "}
+            </div>
+            <div className="QnA-welcome2">
+              {" "}
+              아래의 여러가지 문의 방법을 소개 드립니다.{" "}
+            </div>
+
+            <div className="QnA-list">
+              <div className="contact-index">
+                <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
+                <h3>0507-1318-5745</h3>
+              </div>
+
+              <div className="contact-index">
+                <img
+                  className="QnA-img" alt="img"
+                  src="/how-to-contact-2.png"
+                  onClick={handleContactImageClick1}
+                />
+                <h3>카카오톡 오픈채팅 문의 </h3>
+              </div>
+
+              <div className="contact-index">
+                <img
+                  className="QnA-img" alt="img"
+                  src="/how-to-contact-3.png"
+                  onClick={handleContactImageClick2}
+                />
+                <h3>인스타그램 DM 문의 </h3>
+              </div>
+
+              <div className="contact-index">
+                <img
+                  className="QnA-img" alt="img"
+                  src="/how-to-contact-4.png"
+                  onClick={handleContactImageClick3}
+                />
+                <h3> 네이버 톡톡 문의 </h3>
+              </div>
+            </div>
+          </div>
+          <div className="map-con" id="map-sec">
+            <h1 className="QnA-index">| Location |</h1>
+            {/* <div> </div> */}
+            <div className="root">
+              <div>
+                <div id="map" style={{ width: "400px", height: "300px" }}></div>
+              </div>
+              <div>
+                <div className="mapbutton">
+                  <img  alt="img" src="카카오맵.png" onClick={handleContactImageClick4} />
+                  <img  alt="img"
+                    src="네이버지도.png"
+                    onClick={handleContactImageClick5}
+                  />
+                </div>
+                <div className="shopname-index">
+                  <div className="shopname">유어썸뷰티</div> <br></br>
+                  <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </HeadisTablet>)}
@@ -1580,7 +1567,7 @@ function App() {
             to="us-con" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-100} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> About us </div>
@@ -1634,133 +1621,19 @@ function App() {
           <img className="mainPhoto"  alt="img" src={images[nextImageIndex]} />
         </div>
         <div className="howtocome">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <div className="blank"></div>
+         
 
-          <div className="QnA-con">
-            <h1 className="QnA-index">| Q & A |</h1>
-            
-            <div className="QnA-welcome1">
-              {" "}
-              궁금하신 모든 사항은 편하게 문의주세요!{" "}
-            </div>
-            <div className="QnA-welcome2">
-              {" "}
-              아래의 여러가지 문의 방법을 소개 드립니다.{" "}
-            </div>
-
-            <div className="QnA-list">
-              <div className="contact-index">
-                <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
-                <h3>0507-1318-5745</h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-2.png"
-                  onClick={handleContactImageClick1}
-                />
-                <h3>카카오톡 오픈채팅 문의 </h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-3.png"
-                  onClick={handleContactImageClick2}
-                />
-                <h3>인스타그램 DM 문의 </h3>
-              </div>
-
-              <div className="contact-index">
-                <img
-                  className="QnA-img" alt="img"
-                  src="/how-to-contact-4.png"
-                  onClick={handleContactImageClick3}
-                />
-                <h3> 네이버 톡톡 문의 </h3>
-              </div>
-            </div>
-          </div>
-          <div className="map-con" id="map-sec">
-            <h1 className="QnA-index">| Location |</h1>
-            {/* <div> </div> */}
-            <div className="root">
-              <div>
-                <div id="map" style={{ width: "400px", height: "300px" }}></div>
-              </div>
-              <div>
-                <div className="mapbutton">
-                  <img  alt="img" src="카카오맵.png" onClick={handleContactImageClick4} />
-                  <img  alt="img"
-                    src="네이버지도.png"
-                    onClick={handleContactImageClick5}
-                  />
-                </div>
-                <div className="shopname-index">
-                  <div className="shopname">유어썸뷰티</div> <br></br>
-                  <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="designer-con" id="us-con">
+          <div className="designer-con" id="us-con">
         <h1 className="designer-index">| About us |</h1>
-        <div className="designer-welcome1">
-          {" "}
-          의정부네일 용현동네일 의정부속눈썹펌 유어썸뷰티{" "}
-        </div>
+        
         <div className="designer-welcome2">
           {" "}
           🌷1 : 1 맞춤 디자인시술 100% 예약제🌷{" "}
         </div>
         <div className="designer-welcome2"> open 10:00 close 20:00 </div>
 
-        <div className="designer-welcome2">
+        <div className="designer-welcome1">
           {" "}
           사진을 클릭하면 간단한 프로필을 확인할 수 있습니다.{" "}
         </div>
@@ -1775,8 +1648,8 @@ function App() {
               -KSPPRO 풋레게 교육 이수 <br />
               -독일 할라쉐카 왁싱 마스터 교육 수료 <br />
               -K뷰티전문가연합회(FKBP) 정회원 <br />
-              -제12회 국제바디아트콘테스트 그랑프리 마스터즈 수상 <br />
-              -제12회 국제바디아트콘테스트 대회 수석 심사위원 <br />
+              -국제바디아트콘테스트 그랑프리 마스터즈 수상 <br />
+              -국제바디아트콘테스트 대회 수석 심사위원 <br />
             </div>
           )}
           <div className="designer-list">
@@ -1825,7 +1698,7 @@ function App() {
           {" "}
           원하는 사진 위에 마우스를 올리면 사진이 확대됩니다.{" "}
         </div>
-        <table className="image-table">
+        <table className="image-table" style={{ width: "70%", height: "30%" }}>
           <tbody>
             <tr>
               <td>
@@ -1862,6 +1735,75 @@ function App() {
             </tr>
             </tbody>
         </table>
+      </div>
+
+          <div className="QnA-con">
+            <h1 className="QnA-index">| Reservation |</h1>
+            
+            <div className="QnA-welcome1">
+              {" "}
+              궁금하신 모든 사항은 편하게 문의주세요!{" "}
+            </div>
+            <div className="QnA-welcome2">
+              {" "}
+              아래의 여러가지 문의 방법을 소개 드립니다.{" "}
+            </div>
+
+            <div className="QnA-list">
+              <div className="QnA-divide1">
+                <div className="contact-index">
+                  <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
+                  <h3>0507-1318-5745</h3>
+                </div>
+                <div className="contact-index">
+                  <img
+                  className="QnA-img" alt="img"
+                  src="/how-to-contact-2.png"
+                  onClick={handleContactImageClick1}
+                />
+                <h3>카카오톡 오픈채팅 문의 </h3>
+                </div>
+              </div>
+              <div className="QnA-divide2">
+                <div className="contact-index">
+                <img
+                  className="QnA-img2" alt="img"
+                  src="/how-to-contact-3.png"
+                  onClick={handleContactImageClick2}
+                />
+                <h3>인스타그램 DM 문의 </h3>
+                </div>
+                <div className="contact-index">
+                <img
+                  className="QnA-img2" alt="img"
+                  src="/how-to-contact-4.png"
+                  onClick={handleContactImageClick3}
+                />
+                <h3> 네이버 톡톡 문의 </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="map-con" id="map-sec">
+            <h1 className="QnA-index">| Location |</h1>
+            {/* <div> </div> */}
+            <div className="root">
+              <div>
+                <div id="map" style={{ width: "400px", height: "300px" }}></div>
+              </div>
+              <div>
+                <div className="mapbutton">
+                  <div><img alt="img" src="카카오맵.png" onClick={handleContactImageClick4} /></div>
+                  <div><img alt="img" src="네이버지도.png" onClick={handleContactImageClick5} /></div>                            
+                   </div>
+                <div className="shopname-index">
+                  <div className="shopname">유어썸뷰티</div> <br></br>
+                  <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </HeadisMobile>)}

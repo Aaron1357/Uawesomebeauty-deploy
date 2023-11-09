@@ -34,7 +34,7 @@ body {
 
 .Logo-holder {
   padding-left: 20%;
-  padding-right: 20%;
+  padding-right: 10%;
 }
 .Logo {
   width: 190px;

@@ -1,9 +1,11 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
-// import { Map } from 'react-kakao-maps-sdk';
+
 
 const Test = styled.div`
+
+
 @font-face {
   font-family: "Elice";
   font-weight: 200;
@@ -18,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .main-head {
   display: flex;
   background-color: lavenderblush;
@@ -26,6 +29,29 @@ body {
   position: fixed; /* 헤더를 고정시킴 */
   top: 0; /* 화면 상단에 고정 */
   z-index: 1000; /* 다른 콘텐츠 위에 표시 */
+}
+
+@media (max-width: 1280px) {
+.main-head {
+  display: flex;
+  background-color: red;
+  width: 100%;
+  height: 11%;
+  position: fixed; /* 헤더를 고정시킴 */
+  top: 0; /* 화면 상단에 고정 */
+  z-index: 1000; /* 다른 콘텐츠 위에 표시 */
+}
+
+@media(max-width: 1024px) {
+  .main-head {
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    height: 11%;
+    position: fixed; /* 헤더를 고정시킴 */
+    top: 0; /* 화면 상단에 고정 */
+    z-index: 1000; /* 다른 콘텐츠 위에 표시 */
+  }
 }
 .Logo-holder {
   padding-left: 500px;
@@ -50,6 +76,10 @@ body {
     transition: color 0.5s;
   }
 }
+
+
+
+
 
 .mainPhoto {
   max-height: 89%;
@@ -269,12 +299,18 @@ transform: translateX(170%);
     transform: scale( 2.0, 2.0 ) ;
     transition: transform 0.5s ease;
   }
+  
+
+  
+
+
+ 
 
 
 `;
 
 function App() {
-
+ 
   const images = ["/place1.png", "/place2.png"]; // 이미지 파일 경로 배열
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -391,10 +427,13 @@ function App() {
   }, []);
 
 
+ 
+
 
   return (
     <Test>
     <div className="App">
+                
       <div className="main-head">
         <div className="Logo-holder">
           <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
@@ -466,7 +505,6 @@ function App() {
           <br />
           <br />
           <br />
-
           <br />
           <br />
           <br />

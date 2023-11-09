@@ -33,8 +33,8 @@ body {
 }
 
 .Logo-holder {
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .Logo {
   width: 190px;
@@ -85,8 +85,8 @@ body {
 }
 
 .Logo-holder {
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .Logo {
   width: 190px;
@@ -136,8 +136,8 @@ body {
 }
 
 .Logo-holder {
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .Logo {
   width: 190px;

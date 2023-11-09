@@ -1698,7 +1698,7 @@ function App() {
           {" "}
           원하는 사진 위에 마우스를 올리면 사진이 확대됩니다.{" "}
         </div>
-        <table className="image-table" style={{ width: "70%", height: "30%" }}>
+        <table className="image-table" style={{ width: "30%", height: "30%" }}>
           <tbody>
             <tr>
               <td>

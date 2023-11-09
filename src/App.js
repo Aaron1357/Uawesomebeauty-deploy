@@ -130,13 +130,16 @@ body {
   flex-direction: column;
   background-color: blue;
   width: 100%;
-  height: 160px;
+  height: 150px;
   position: fixed; /* 헤더를 고정시킴 */
   top: 0; /* 화면 상단에 고정 */
   z-index: 1000; /* 다른 콘텐츠 위에 표시 */
+  align-items: center;
+  
 }
 
 .Logo-holder {
+  display: flex;
   align-items: center;
   
 }
@@ -160,6 +163,7 @@ body {
   }
 }
 .menu-2 {
+
   display: flex;
   width: 100%
   justify-content: space-around;

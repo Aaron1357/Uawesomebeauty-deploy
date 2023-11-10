@@ -593,7 +593,7 @@ transform: translateX(150%);
   padding-bottom: 60px;
 }
 .inner-fac-con {
-    padding-top: 100px;
+  padding-top: 100px;
   background: white;
   width: 100%;
   height: 89vh;
@@ -838,12 +838,14 @@ body {
   font-family: Elice;
   padding-bottom: 20px;
   padding-top : 40px;
+  font-size: 16px;
 }
 .map-index{
   font-family: Elice;
   padding-bottom: 20px;
   padding-top : 0px;
   margin-top : -40px;
+  font-size: 16px;
 }
 .QnA-divide1{
 width: 90%;
@@ -940,6 +942,7 @@ width: 90%;
   padding-top: 30px;
   font-family: Elice;
   padding-bottom: 30px;
+  font-size: 16px;
 }
 
 .plusdescribe{
@@ -977,6 +980,7 @@ transform: translateX(0%);
   padding-top: 60px;
   font-family: Elice;
   padding-bottom: 60px;
+  font-size: 16px;
   
 }
 .inner-fac-con {
@@ -1886,7 +1890,7 @@ function App() {
          
 
           <div className="designer-con" id="us-con">
-        <h2 className="designer-index">| About us |</h2>
+        <h3 className="designer-index">| About us |</h3>
         
         <div className="designer-welcome2">
           {" "}
@@ -1950,7 +1954,7 @@ function App() {
       </div>
 
       <div className="inner-fac-con" id="inner-sec">
-        <h2 className="fac-index">| Gallary |</h2>
+        <h3 className="fac-index">| Gallary |</h3>
         <div className="fac-welcome1">
           {" "}
           1:1 맞춤 디자인 작업으로 고객님들의 스타일을 찾아드립니다.{" "}

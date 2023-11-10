@@ -1863,7 +1863,7 @@ function App() {
             to="map-sec" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-90} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-110} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> Location </div>

@@ -103,7 +103,7 @@ body {
 
 .QnA-con {
   
-  padding-top: 200px;
+  padding-top: 100px;
   background: mistyrose;
  
   width: 100.8%;
@@ -152,6 +152,8 @@ body {
   font-family: Elice;
   padding-bottom: 60px;
 }
+
+
 .contact-index{
   word-break;
   display: flex;
@@ -215,16 +217,16 @@ body {
 }
 .designer-welcome1{
    padding-top : 15px;
-   padding-bottom: 60px;
+   padding-bottom: 30px;
    
-   font-family: Elice;
+   font-family: Elice-light;
 
 
    
 }
 .designer-welcome2{
    padding-top : 10px;
-   padding-bottom: 50px;
+   padding-bottom: 30px;
    font-weight:bold;
    font-family: Elice;
 }
@@ -279,12 +281,12 @@ transform: translateX(150%);
 }
 .fac-welcome2{
    padding-top : 10px;
-   padding-bottom: 35px;
+   padding-bottom: 20px;
    font-family: Elice-light;
 }
 .fac-img {
-  width: 150px; /* 이미지의 너비를 200px로 설정 */
-  height: 150px; /* 이미지의 높이를 200px로 설정 */
+  width: 100px; /* 이미지의 너비를 200px로 설정 */
+  height: 100px; /* 이미지의 높이를 200px로 설정 */
   padding : 7px;
   border-radius: 10%;
   &:hover {
@@ -835,6 +837,13 @@ body {
 .QnA-index{
   font-family: Elice;
   padding-bottom: 20px;
+  padding-top : 40px;
+}
+.map-index{
+  font-family: Elice;
+  padding-bottom: 20px;
+  padding-top : 0px;
+  margin-top : -40px;
 }
 .QnA-divide1{
 width: 90%;
@@ -928,6 +937,7 @@ width: 90%;
    font-family: Elice;
 }
 .designer-index{
+  padding-top: 30px;
   font-family: Elice;
   padding-bottom: 30px;
 }
@@ -942,7 +952,7 @@ width: 90%;
   text-align: center;
   margin-top: 35%;
   margin-left: 3%;
-  line-height: 145%;
+  line-height: 185%;
   font-size: 12px;
   color: dimgrey;
   font-weight: bold;
@@ -954,7 +964,7 @@ transform: translateX(0%);
   text-align: center;
   margin-top: 35%;
   margin-left: 3%;
-  line-height: 145%;
+  line-height: 185%;
   font-size: 12px;
   color: dimgrey;
   font-weight: bold;
@@ -964,7 +974,7 @@ transform: translateX(0%);
 
 
 .fac-index{
-  padding-top: 30px;
+  padding-top: 60px;
   font-family: Elice;
   padding-bottom: 60px;
   
@@ -1448,7 +1458,7 @@ function App() {
             <div className="left-description">
               <div className="description-line">
                 <div className="line-left">상호명</div>
-                <div>유엄썸뷰티 {'('}대표자:이순미{')'}</div>
+                <div>유어썸뷰티 {'('}대표자:이순미{')'}</div>
               </div>
               <div className="description-line">
                 <div className="line-left">사업자 번호</div>
@@ -1466,7 +1476,7 @@ function App() {
             <div className="right-description">
               <div className="description-line">
                 <div className="line-left">상호명</div>
-                <div>유엄썸뷰티 대표자:이순미</div>
+                <div>유어썸뷰티 대표자:이순미</div>
               </div>
               <div className="description-line">
                 <div className="line-left">사업자 번호</div>
@@ -2027,7 +2037,7 @@ function App() {
             </div>
           </div>
           <div className="map-con" id="map-sec">
-            <h2 className="QnA-index">| Location |</h2>
+            <h2 className="map-index">| Location |</h2>
             {/* <div> </div> */}
             <div className="root">
               <div>

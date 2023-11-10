@@ -975,7 +975,7 @@ width: 90%;
   text-align: center;
   margin-top: 35%;
   margin-left: 3%;
-  line-height: 185%;
+  line-height: 165%;
   font-size: 12px;
   color: dimgrey;
   font-weight: bold;
@@ -987,7 +987,7 @@ transform: translateX(0%);
   text-align: center;
   margin-top: 35%;
   margin-left: 3%;
-  line-height: 185%;
+  line-height: 165%;
   font-size: 12px;
   color: dimgrey;
   font-weight: bold;
@@ -1179,13 +1179,13 @@ function App() {
       window.kakao.maps.load(() => {
         var container = document.getElementById("map");
         var options = {
-          center: new window.kakao.maps.LatLng(37.7344, 127.0818),
+          center: new window.kakao.maps.LatLng(37.73445, 127.0807),
           level: 4,
         };
         var map = new window.kakao.maps.Map(container, options);
 
         // 마커가 표시될 위치입니다
-        var markerPosition = new window.kakao.maps.LatLng(37.7344, 127.0818);
+        var markerPosition = new window.kakao.maps.LatLng(37.73445, 127.0807);
 
         // 마커를 생성합니다
         var marker = new window.kakao.maps.Marker({

@@ -438,9 +438,8 @@ body {
 
 .QnA-con {
   
-  padding-top: 200px;
+  padding-top: 150px;
   background: mistyrose;
- 
   width: 100.8%;
   height: 89vh;
   display: flex;
@@ -552,7 +551,7 @@ body {
    padding-top : 15px;
    padding-bottom: 60px;
    
-   font-family: Elice;
+   font-family: Elice-light;
 
 
    
@@ -578,8 +577,10 @@ body {
   font-size: 14px;
   color: dimgrey;
   font-weight: bold;
-transform: translateX(-8%); 
+  transform: translate(-8%, -20%);
+  
 }
+
 .describe2{
   width: 40%;
   position: absolute; /* 절대 위치 설정 */
@@ -588,7 +589,8 @@ transform: translateX(-8%);
   font-size: 14px;
   color: dimgrey;
   font-weight: bold;
-transform: translateX(150%); 
+  transform: translate(150%, -20%);
+  
 }
 
 
@@ -620,8 +622,8 @@ transform: translateX(150%);
 
 
 .fac-img {
-  width: 20%; /* 이미지의 너비를 200px로 설정 */
-  height: 20%; /* 이미지의 높이를 200px로 설정 */
+  width: 18%; /* 이미지의 너비를 200px로 설정 */
+  height: 18%; /* 이미지의 높이를 200px로 설정 */
   padding : 5px;
   border-radius: 10%;
   &:hover {
@@ -631,7 +633,7 @@ transform: translateX(150%);
 }
 
 .image-table {
- margin-left: 26%;
+ margin-left: 28%;
   
 }
 

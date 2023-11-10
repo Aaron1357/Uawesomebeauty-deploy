@@ -1140,6 +1140,10 @@ function App() {
     };
   }, [nextImageIndex]);
 
+  const handleContactImageClick0 = () => {
+    window.open("tel:050713185745", "_blank"); // 문의 링크 관련 코드
+  };
+
   const handleContactImageClick1 = () => {
     window.open("https://open.kakao.com/o/sXWLm5Pf", "_blank"); // 문의 링크 관련 코드
   };
@@ -2010,7 +2014,10 @@ function App() {
             <div className="QnA-list">
               <div className="QnA-divide1">
                 <div className="contact-index">
-                  <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
+                  <img className="QnA-img"  alt="img" 
+                  src="/how-to-contact--1.png" 
+                  onClick={handleContactImageClick0}
+                  />
                   <h4>0507-1318-5745</h4>
                 </div>
                 <div className="contact-index">

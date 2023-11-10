@@ -239,12 +239,20 @@ body {
   width: 40%;
   position: absolute; /* 절대 위치 설정 */
   text-align: center;
+  line-height: 180%;
+  font-size: 14px;
+  color: dimgrey;
+  font-weight: bold;
 transform: translateX(-8%); 
 }
 .describe2{
   width: 40%;
   position: absolute; /* 절대 위치 설정 */
   text-align: center;
+  line-height: 180%;
+  font-size: 14px;
+  color: dimgrey;
+  font-weight: bold;
 transform: translateX(150%); 
 }
 
@@ -283,7 +291,39 @@ transform: translateX(150%);
     transform: scale( 2.0, 2.0 ) ;
     transition: transform 0.5s ease;
   }
+}
 
+
+/*맨 아래 설명 부분*/
+  
+.company-description-con{
+  
+  margin-bottom: -10px;
+  padding-top: 30px;
+  background: mistyrose;
+  width: 100.8%;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 180%;
+  color: dimgrey;
+  font-weight: bold;
+  
+}
+
+.left-description{
+  margin-right: 10%;
+}
+
+.description-line{
+  display: flex;
+}
+
+.line-left{
+  width:100px;
+  opacity: 80%;
+}
 
 `;
 
@@ -526,12 +566,20 @@ body {
   width: 40%;
   position: absolute; /* 절대 위치 설정 */
   text-align: center;
+  line-height: 180%;
+  font-size: 14px;
+  color: dimgrey;
+  font-weight: bold;
 transform: translateX(-8%); 
 }
 .describe2{
   width: 40%;
   position: absolute; /* 절대 위치 설정 */
   text-align: center;
+  line-height: 180%;
+  font-size: 14px;
+  color: dimgrey;
+  font-weight: bold;
 transform: translateX(150%); 
 }
 
@@ -570,6 +618,39 @@ transform: translateX(150%);
     transform: scale( 2.0, 2.0 ) ;
     transition: transform 0.5s ease;
   }
+}
+
+
+/*맨 아래 설명 부분*/
+  
+.company-description-con{
+  
+  margin-bottom: -10px;
+  padding-top: 30px;
+  background: mistyrose;
+  width: 100.8%;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 180%;
+  color: dimgrey;
+  font-weight: bold;
+  
+}
+
+.left-description{
+  margin-right: 6%;
+}
+
+.description-line{
+  display: flex;
+}
+
+.line-left{
+  width:100px;
+  opacity: 80%;
+}
 
 `;
 
@@ -863,6 +944,8 @@ width: 90%;
   margin-left: 3%;
   line-height: 145%;
   font-size: 12px;
+  color: dimgrey;
+  font-weight: bold;
 transform: translateX(0%); 
 }
 .describe2{
@@ -873,6 +956,8 @@ transform: translateX(0%);
   margin-left: 3%;
   line-height: 145%;
   font-size: 12px;
+  color: dimgrey;
+  font-weight: bold;
 transform: translateX(0%); 
 }
 
@@ -919,6 +1004,38 @@ transform: translateX(0%);
  margin-left: 18%;
   
 }
+
+/*맨 아래 설명 부분*/
+  
+.company-description-con{
+
+  margin-bottom: -10px;
+  padding-top: 30px;
+  background: mistyrose;
+  width: 103.2%;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  line-height: 200%;
+  color: dimgrey;
+  font-weight: bold;
+}
+
+.left-description{
+  margin-right: 4%;
+}
+
+.description-line{
+  display: flex;
+}
+
+.line-left{
+  width: 70px;
+  opacity: 80%;
+}
+
+
 
 
 `;
@@ -1073,7 +1190,15 @@ function App() {
         <div className="App">
       <div className="main-head">
         <div className="Logo-holder">
+        <Link
+            to="home" // 섹션의 ID를 여기에 입력
+            spy={true}
+            smooth={true}
+            offset={-8} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            duration={500}
+          >
           <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
+        </Link>
         </div>
         
         <div className="menu-holder">
@@ -1128,7 +1253,7 @@ function App() {
     </div>
 
     <div>
-        <div>
+        <div id="home">
           <img className="mainPhoto"  alt="img" src={images[currentImageIndex]} />
           <img className="mainPhoto"  alt="img" src={images[nextImageIndex]} />
         </div>
@@ -1317,6 +1442,48 @@ function App() {
               </div>
             </div>
           </div>
+
+
+          <div className="company-description-con">
+            <div className="left-description">
+              <div className="description-line">
+                <div className="line-left">상호명</div>
+                <div>유엄썸뷰티 {'('}대표자:이순미{')'}</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">사업자 번호</div>
+                <div>xxx-xx-xxxxx</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">대표연락</div>
+                <div>0507-1318-5745</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">주소</div>
+                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+              </div>
+            </div>
+            <div className="right-description">
+              <div className="description-line">
+                <div className="line-left">상호명</div>
+                <div>유엄썸뷰티 대표자:이순미</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">사업자 번호</div>
+                <div>xxx-xx-xxxxx</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">대표연락</div>
+                <div>0507-1318-5745</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">주소</div>
+                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
       
@@ -1331,7 +1498,16 @@ function App() {
       <div className="App">
       <div className="main-head">
         <div className="Logo-holder">
+        <Link
+            to="home" // 섹션의 ID를 여기에 입력
+            spy={true}
+            smooth={true}
+            offset={-8} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            duration={500}
+          >
           <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
+        </Link>
+        
         </div>
         
         <div className="menu-holder">
@@ -1386,7 +1562,7 @@ function App() {
     </div>
 
     <div>
-        <div>
+        <div id="home">
           <img className="mainPhoto"  alt="img" src={images[currentImageIndex]} />
           <img className="mainPhoto"  alt="img" src={images[nextImageIndex]} />
         </div>
@@ -1575,6 +1751,45 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="company-description-con">
+            <div className="left-description">
+              <div className="description-line">
+                <div className="line-left">상호명</div>
+                <div>유엄썸뷰티 {'('}대표자:이순미{')'}</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">사업자 번호</div>
+                <div>xxx-xx-xxxxx</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">대표연락</div>
+                <div>0507-1318-5745</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">주소</div>
+                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+              </div>
+            </div>
+            <div className="right-description">
+              <div className="description-line">
+                <div className="line-left">상호명</div>
+                <div>유엄썸뷰티 대표자:이순미</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">사업자 번호</div>
+                <div>xxx-xx-xxxxx</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">대표연락</div>
+                <div>0507-1318-5745</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">주소</div>
+                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -1586,7 +1801,16 @@ function App() {
         <div className="App">
       <div className="main-head">
         <div className="Logo-holder">
+        <Link
+            to="home" // 섹션의 ID를 여기에 입력
+            spy={true}
+            smooth={true}
+            offset={-8} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            duration={500}
+          >
           <img src="/Logo.png" className="Logo" alt="img" /> {/*로고 이미지 */}
+        </Link>
+         
         </div>
         <div className="menu-2">
         <div className="menu-holder">
@@ -1643,7 +1867,7 @@ function App() {
 
 
     <div>
-        <div>
+        <div id="home">
           <img className="mainPhoto"  alt="img" src={images[currentImageIndex]} />
           <img className="mainPhoto"  alt="img" src={images[nextImageIndex]} />
         </div>
@@ -1821,6 +2045,48 @@ function App() {
               </div>
             </div>
           </div>
+          
+
+          <div className="company-description-con">
+            <div className="left-description">
+              <div className="description-line">
+                <div className="line-left">상호명</div>
+                <div>유엄썸뷰티 {'('}대표자:이순미{')'}</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">사업자 번호</div>
+                <div>xxx-xx-xxxxx</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">대표연락</div>
+                <div>0507-1318-5745</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">주소</div>
+                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+              </div>
+            </div>
+            <div className="right-description">
+              <div className="description-line">
+                <div className="line-left">상호명</div>
+                <div>유엄썸뷰티 대표자:이순미</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">사업자 번호</div>
+                <div>xxx-xx-xxxxx</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">대표연락</div>
+                <div>0507-1318-5745</div>
+              </div>
+              <div className="description-line">
+                <div className="line-left">주소</div>
+                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
 

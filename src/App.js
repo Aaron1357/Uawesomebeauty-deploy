@@ -47,7 +47,7 @@ body {
 }
 .menu {
   font-size: 18px;
-  color: black;
+  color: dimgrey;
   font-family: Elice-light;
   &:hover {
     color: red;
@@ -78,7 +78,7 @@ body {
   
 }
 .mapbutton {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 30px;
   display: flex;
 }
@@ -91,6 +91,10 @@ body {
     opacity: 0.5;
     transition: opacity 0.5s;
   }
+}
+.map-index{
+  font-family: Elice;
+  padding-bottom: 30px;
 }
 .shopname {
   font-weight: bold;
@@ -161,6 +165,7 @@ body {
   flex-direction: column;
   font-family: Elice-light;
 }
+
 .map-con{
   width: 100.8%;
    display: flex;
@@ -266,7 +271,7 @@ transform: translateX(150%);
   padding-bottom: 40px;
 }
 .inner-fac-con {
-    padding-top: 100px;
+  padding-top: 100px;
   background: white;
   width: 100%;
   height: 89vh;
@@ -380,7 +385,7 @@ body {
 .menu {
   
   font-size: 16px;
-  color: black;
+  color: dimgrey;
   font-family: Elice-light;
   &:hover {
     color: red;
@@ -432,7 +437,7 @@ body {
 }
 
 .blank{
-  height: 66vh;
+  height: 65vh;
 
 }
 
@@ -717,7 +722,7 @@ body {
 }
 .menu {
   font-size: 13px;
-  color: black;
+  color: dimgrey;
   font-family: Elice-light;
   &:hover {
     color: red;
@@ -1441,7 +1446,7 @@ function App() {
             </div>
           </div>
           <div className="map-con" id="map-sec">
-            <h1 className="QnA-index">| Location |</h1>
+            <h1 className="map-index">| Location |</h1>
             {/* <div> </div> */}
             <div className="root">
               <div>

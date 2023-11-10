@@ -263,7 +263,7 @@ transform: translateX(150%);
 .fac-index{
   padding-top: 30px;
   font-family: Elice;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 .inner-fac-con {
     padding-top: 100px;
@@ -284,15 +284,21 @@ transform: translateX(150%);
    padding-bottom: 20px;
    font-family: Elice-light;
 }
+
 .fac-img {
-  width: 100px; /* 이미지의 너비를 200px로 설정 */
-  height: 100px; /* 이미지의 높이를 200px로 설정 */
-  padding : 7px;
+  width: 14%; /* 이미지의 너비를 200px로 설정 */
+  height: 14%; /* 이미지의 높이를 200px로 설정 */
+  padding : 5px;
   border-radius: 10%;
   &:hover {
     transform: scale( 2.0, 2.0 ) ;
     transition: transform 0.5s ease;
   }
+}
+
+.image-table {
+ margin-left: 35.5%;
+  
 }
 
 
@@ -611,15 +617,22 @@ transform: translateX(150%);
    padding-bottom: 35px;
    font-family: Elice-light;
 }
+
+
 .fac-img {
-  width: 150px; /* 이미지의 너비를 200px로 설정 */
-  height: 150px; /* 이미지의 높이를 200px로 설정 */
-  padding : 7px;
+  width: 20%; /* 이미지의 너비를 200px로 설정 */
+  height: 20%; /* 이미지의 높이를 200px로 설정 */
+  padding : 5px;
   border-radius: 10%;
   &:hover {
     transform: scale( 2.0, 2.0 ) ;
     transition: transform 0.5s ease;
   }
+}
+
+.image-table {
+ margin-left: 26%;
+  
 }
 
 
@@ -830,7 +843,7 @@ body {
 }
 .QnA-welcome2{
    padding-top : 10px;
-   padding-bottom: 40px;
+   padding-bottom: 20px;
    font-weight:bold;
    font-family: Elice;
 }
@@ -1256,7 +1269,7 @@ function App() {
             to="map-sec" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-90} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-110} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> Location </div>
@@ -1349,43 +1362,34 @@ function App() {
           {" "}
           원하는 사진 위에 마우스를 올리면 사진이 확대됩니다.{" "}
         </div>
-        <table className="image-table">
-          <tbody>
-            <tr>
-              <td>
+        <div className="image-table">
+              
+          <div className="image-table-row">
                 <img className="fac-img" src="/1.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/2.jpg" alt="이미지 1" />
-              </td>
-              <td>
+            
                 <img className="fac-img" src="/3.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            <tr>
-              <td>
+             
+          </div>
+          <div className="image-table-row">
+           
                 <img className="fac-img" src="/4.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/5.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/6.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            <tr>
-              <td>
+             
+          </div> 
+          <div className="image-table-row">
                 <img className="fac-img" src="/7.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/8.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/9.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            </tbody>
-        </table>
+            
+          </div>
+        </div>
       </div>
 
           <div className="QnA-con">
@@ -1658,43 +1662,34 @@ function App() {
           {" "}
           원하는 사진 위에 마우스를 올리면 사진이 확대됩니다.{" "}
         </div>
-        <table className="image-table">
-          <tbody>
-            <tr>
-              <td>
+        <div className="image-table">
+              
+          <div className="image-table-row">
                 <img className="fac-img" src="/1.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/2.jpg" alt="이미지 1" />
-              </td>
-              <td>
+            
                 <img className="fac-img" src="/3.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            <tr>
-              <td>
+             
+          </div>
+          <div className="image-table-row">
+           
                 <img className="fac-img" src="/4.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/5.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/6.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            <tr>
-              <td>
+             
+          </div> 
+          <div className="image-table-row">
                 <img className="fac-img" src="/7.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/8.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/9.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            </tbody>
-        </table>
+            
+          </div>
+        </div>
       </div>
 
           <div className="QnA-con">

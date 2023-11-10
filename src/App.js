@@ -3,7 +3,6 @@ import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 
-
 const HeadisDesktop = styled.div`
 
 
@@ -308,7 +307,7 @@ body {
 .main-head {
   margin-left: -7px;
   display: flex;
-  background-color: red;
+  background-color: lavenderblush;
   width: 100%;
   height: 110px;
   position: fixed; /* 헤더를 고정시킴 */
@@ -410,7 +409,7 @@ body {
 }
 .QnA-img{
    width: 50%;
-   height: 30%;
+   height: 40%;
    padding-left: 60px;
    padding-right: 60px;
    padding-bottom: 20px;
@@ -593,7 +592,7 @@ body {
 .main-head {
   display: flex;
   flex-direction: column;
-  background-color: blue;
+  background-color: lavenderblush;
   width: 100%;
   height: 150px;
   position: fixed; /* 헤더를 고정시킴 */
@@ -659,8 +658,9 @@ body {
   
 }
 .mapbutton {
-  padding-top: 70px;
-  padding-bottom: 30px;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  
   display: flex;
   flex-direction: column;
 }
@@ -678,6 +678,9 @@ body {
 .shopname {
   font-weight: bold;
 }
+.shoplocation{
+  font-size: 14px;
+}
 
 .blank{
   height: 51vh;
@@ -686,9 +689,9 @@ body {
 
 .QnA-con {
   
-  padding-top: 200px;
+  padding-top: 120px;
   background: mistyrose;
-  width: 100.8%;
+  width: 103.2%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -701,10 +704,11 @@ body {
   justify-content:center;
   width: 100%;
 }
+
 .QnA-img{
    width: 50%;
    height: 30%;
-   padding-left: 48px;
+   padding-left: 25%;
    padding-top: 20px;
     padding-bottom: 20px;
    
@@ -720,7 +724,7 @@ body {
 .QnA-img2{
   width: 50%;
   height: 30%;
-  padding-left: 48px;
+  padding-left: 25%;
   padding-top: 20px;
    padding-bottom: 20px;
   
@@ -751,11 +755,11 @@ body {
   padding-bottom: 20px;
 }
 .QnA-divide1{
-width: 100%;
+width: 90%;
 }
 .QnA-divide2{
-  width: 100%;
-  }
+  width: 90%;
+}
 
 .contact-index{
  
@@ -780,13 +784,16 @@ width: 100%;
   font-family:Elice;
   text-align: center;
 }
+
+
+
 .designer-con {
   
   margin-top: 0px;
   margin-left: -0.3%;
-  padding-top: 140px;
+  padding-top: 35px;
   background: mistyrose;
-  width: 100.8%;
+  width: 103.2%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -797,8 +804,8 @@ width: 100%;
 .designer-list {
     display: flex;
     align-items: center;
-    width: 30%;
-    margin-left: 35%;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .designer-list > * {
@@ -812,7 +819,7 @@ width: 100%;
 
 .designer-img{
    width: 100%;
-   height: 20%;
+   height: 30%;
    border-radius: 20%;
    
    &:hover {
@@ -825,37 +832,47 @@ width: 100%;
 }
 .designer-welcome1{
    padding-top : 15px;
-   padding-bottom: 60px;
-   
+   padding-bottom: 40px;
+   font-size: 12px;
    font-family: Elice;
-
-
    
 }
+
 .designer-welcome2{
-   padding-top : 10px;
-   padding-bottom: 50px;
+   padding-top : 0px;
+   padding-bottom: 30px;
    font-weight:bold;
+   
    font-family: Elice;
 }
 .designer-index{
   font-family: Elice;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
+
 .plusdescribe{
  display: flex;
 }
+
 .describe {
-  width: 40%;
+  width: 90%;
   position: absolute; /* 절대 위치 설정 */
   text-align: center;
-transform: translateX(-8%); 
+  margin-top: 35%;
+  margin-left: 3%;
+  line-height: 145%;
+  font-size: 12px;
+transform: translateX(0%); 
 }
 .describe2{
-  width: 40%;
+  width: 90%;
   position: absolute; /* 절대 위치 설정 */
   text-align: center;
-transform: translateX(150%); 
+  margin-top: 35%;
+  margin-left: 3%;
+  line-height: 145%;
+  font-size: 12px;
+transform: translateX(0%); 
 }
 
 
@@ -887,14 +904,21 @@ transform: translateX(150%);
    font-family: Elice-light;
 }
 .fac-img {
-  width: 150px; /* 이미지의 너비를 200px로 설정 */
-  height: 150px; /* 이미지의 높이를 200px로 설정 */
-  padding : 1px;
+  width: 23%; /* 이미지의 너비를 200px로 설정 */
+  height: 23%; /* 이미지의 높이를 200px로 설정 */
+  padding : 5px;
   border-radius: 10%;
   &:hover {
     transform: scale( 2.0, 2.0 ) ;
     transition: transform 0.5s ease;
   }
+}
+
+.image-table {
+ margin-left: 18%;
+  
+}
+
 
 `;
 
@@ -930,6 +954,8 @@ function App() {
   const handleDescriptionToggle = () => {
     setShowDescription(!showDescription);
     setShowDescription2(false); // 오른쪽 설명 섹션을 닫습니다.
+   
+   
   };
 
   const handleDescriptionToggle2 = () => {
@@ -1336,7 +1362,7 @@ function App() {
             to="QnA-con" // 섹션의 ID를 여기에 입력
             spy={true}
             smooth={true}
-            offset={-20} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
+            offset={-50} // 스크롤 오프셋 조절 (헤더 높이에 맞게 조절)
             duration={500}
           >
             <div className="menu"> Reservation </div>
@@ -1698,43 +1724,34 @@ function App() {
           {" "}
           원하는 사진 위에 마우스를 올리면 사진이 확대됩니다.{" "}
         </div>
-        <table className="image-table" style={{ width: "30%", height: "30%" }}>
-          <tbody>
-            <tr>
-              <td>
+        <div className="image-table">
+              
+          <div className="image-table-row">
                 <img className="fac-img" src="/1.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/2.jpg" alt="이미지 1" />
-              </td>
-              <td>
+            
                 <img className="fac-img" src="/3.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            <tr>
-              <td>
+             
+          </div>
+          <div className="image-table-row">
+           
                 <img className="fac-img" src="/4.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/5.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/6.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            <tr>
-              <td>
+             
+          </div> 
+          <div className="image-table-row">
                 <img className="fac-img" src="/7.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/8.jpg" alt="이미지 1" />
-              </td>
-              <td>
+             
                 <img className="fac-img" src="/9.jpg" alt="이미지 1" />
-              </td>
-            </tr>
-            </tbody>
-        </table>
+            
+          </div>
+        </div>
       </div>
 
           <div className="QnA-con">
@@ -1753,7 +1770,7 @@ function App() {
               <div className="QnA-divide1">
                 <div className="contact-index">
                   <img className="QnA-img"  alt="img" src="/how-to-contact--1.png" />
-                  <h3>0507-1318-5745</h3>
+                  <h4>0507-1318-5745</h4>
                 </div>
                 <div className="contact-index">
                   <img
@@ -1761,7 +1778,7 @@ function App() {
                   src="/how-to-contact-2.png"
                   onClick={handleContactImageClick1}
                 />
-                <h3>카카오톡 오픈채팅 문의 </h3>
+                <h4>카카오톡 오픈채팅 문의 </h4>
                 </div>
               </div>
               <div className="QnA-divide2">
@@ -1771,7 +1788,7 @@ function App() {
                   src="/how-to-contact-3.png"
                   onClick={handleContactImageClick2}
                 />
-                <h3>인스타그램 DM 문의 </h3>
+                <h4>인스타그램 DM 문의 </h4>
                 </div>
                 <div className="contact-index">
                 <img
@@ -1779,7 +1796,7 @@ function App() {
                   src="/how-to-contact-4.png"
                   onClick={handleContactImageClick3}
                 />
-                <h3> 네이버 톡톡 문의 </h3>
+                <h4> 네이버 톡톡 문의 </h4>
                 </div>
               </div>
             </div>
@@ -1789,7 +1806,7 @@ function App() {
             {/* <div> </div> */}
             <div className="root">
               <div>
-                <div id="map" style={{ width: "400px", height: "300px" }}></div>
+                <div id="map" style={{ width: "200px", height: "200px" }}></div>
               </div>
               <div>
                 <div className="mapbutton">
@@ -1798,7 +1815,7 @@ function App() {
                    </div>
                 <div className="shopname-index">
                   <div className="shopname">유어썸뷰티</div> <br></br>
-                  <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+                  <div className="shoplocation">경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
                 </div>
               </div>
             </div>

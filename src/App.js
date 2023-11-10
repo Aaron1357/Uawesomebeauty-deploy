@@ -1010,20 +1010,20 @@ transform: translateX(0%);
 .company-description-con{
 
   margin-bottom: -10px;
-  padding-top: 30px;
+  padding-top: 3%;
   background: mistyrose;
   width: 103.2%;
   height: 12vh;
   display: flex;
   justify-content: center;
-  font-size: 10px;
-  line-height: 200%;
+  font-size: 8px;
+  line-height: 180%;
   color: dimgrey;
   font-weight: bold;
 }
 
 .left-description{
-  margin-right: 4%;
+  margin-right: 3%;
 }
 
 .description-line{
@@ -1031,7 +1031,7 @@ transform: translateX(0%);
 }
 
 .line-left{
-  width: 70px;
+  width: 60px;
   opacity: 80%;
 }
 

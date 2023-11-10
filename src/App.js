@@ -646,6 +646,7 @@ body {
   margin-top: 140px;
 }
 
+
 .howtocome {
   display: flex;
   flex-direction: column;
@@ -710,7 +711,7 @@ body {
    height: 30%;
    padding-left: 25%;
    padding-top: 20px;
-    padding-bottom: 20px;
+   padding-bottom: 4%;
    
    &:hover {
     color: red;
@@ -726,7 +727,7 @@ body {
   height: 30%;
   padding-left: 25%;
   padding-top: 20px;
-   padding-bottom: 20px;
+  padding-bottom: 4%;
   
   &:hover {
    color: red;

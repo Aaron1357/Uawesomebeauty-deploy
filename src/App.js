@@ -658,8 +658,8 @@ body {
   
 }
 .mapbutton {
-  padding-top: 15%;
-  padding-bottom: 10%;
+  padding-top: 10%;
+  padding-bottom: 6%;
   
   display: flex;
   flex-direction: column;
@@ -738,7 +738,7 @@ body {
 }
 
 .QnA-welcome1{
-   padding-top : 30px;
+   padding-top : 10px;
    padding-bottom: 10px;
    font-weight:bold;
    font-family: Elice;
@@ -746,7 +746,7 @@ body {
 }
 .QnA-welcome2{
    padding-top : 10px;
-   padding-bottom: 60px;
+   padding-bottom: 40px;
    font-weight:bold;
    font-family: Elice;
 }
@@ -1651,7 +1651,7 @@ function App() {
          
 
           <div className="designer-con" id="us-con">
-        <h1 className="designer-index">| About us |</h1>
+        <h2 className="designer-index">| About us |</h2>
         
         <div className="designer-welcome2">
           {" "}
@@ -1715,7 +1715,7 @@ function App() {
       </div>
 
       <div className="inner-fac-con" id="inner-sec">
-        <h1 className="fac-index">| Gallary |</h1>
+        <h2 className="fac-index">| Gallary |</h2>
         <div className="fac-welcome1">
           {" "}
           1:1 맞춤 디자인 작업으로 고객님들의 스타일을 찾아드립니다.{" "}
@@ -1755,7 +1755,7 @@ function App() {
       </div>
 
           <div className="QnA-con">
-            <h1 className="QnA-index">| Reservation |</h1>
+            <h2 className="QnA-index">| Reservation |</h2>
             
             <div className="QnA-welcome1">
               {" "}
@@ -1802,7 +1802,7 @@ function App() {
             </div>
           </div>
           <div className="map-con" id="map-sec">
-            <h1 className="QnA-index">| Location |</h1>
+            <h2 className="QnA-index">| Location |</h2>
             {/* <div> </div> */}
             <div className="root">
               <div>

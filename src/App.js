@@ -979,7 +979,7 @@ width: 90%;
   font-size: 12px;
   color: dimgrey;
   font-weight: bold;
-transform: translateX(0%); 
+  transform: translate(0%, -10%); 
 }
 .describe2{
   width: 90%;
@@ -991,7 +991,7 @@ transform: translateX(0%);
   font-size: 12px;
   color: dimgrey;
   font-weight: bold;
-transform: translateX(0%); 
+  transform: translate(0%, -10%);
 }
 
 

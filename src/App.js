@@ -1487,7 +1487,7 @@ function App() {
               </div>
               <div className="description-line">
                 <div className="line-left">사업자 번호</div>
-                <div>xxx-xx-xxxxx</div>
+                <div>204-29-43709</div>
               </div>
               <div className="description-line">
                 <div className="line-left">대표연락</div>
@@ -1500,20 +1500,20 @@ function App() {
             </div>
             <div className="right-description">
               <div className="description-line">
-                <div className="line-left">상호명</div>
-                <div>유어썸뷰티 대표자:이순미</div>
+                <div className="line-left">웹 관리자</div>
+                <div>김종휘</div>
               </div>
               <div className="description-line">
-                <div className="line-left">사업자 번호</div>
-                <div>xxx-xx-xxxxx</div>
+                <div className="line-left">웹 관리자</div>
+                <div>구관원</div>
               </div>
               <div className="description-line">
-                <div className="line-left">대표연락</div>
-                <div>0507-1318-5745</div>
+                <div className="line-left">연락처</div>
+                <div>010-9971-1540</div>
               </div>
               <div className="description-line">
-                <div className="line-left">주소</div>
-                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+                <div className="line-left">연락처</div>
+                <div>rksjsl92@gmail.com</div>
               </div>
             </div>
           </div>
@@ -1802,17 +1802,16 @@ function App() {
                 <div>김종휘</div>
               </div>
               <div className="description-line">
-                <div className="line-left">유지보수 담당자</div>
+                <div className="line-left">웹 관리자</div>
                 <div>구관원</div>
               </div>
               <div className="description-line">
                 <div className="line-left">연락처</div>
-                <div>kimjonghwi1540@gmail.com</div>
-                <div>rksjsl92@gmail.com</div>
+                <div>010-9971-1540</div>
               </div>
               <div className="description-line">
                 <div className="line-left">연락처</div>
-                <div>010-9971-1540</div>
+                <div>rksjsl92@gmail.com</div>
               </div>
             </div>
           </div>
@@ -2085,7 +2084,7 @@ function App() {
               </div>
               <div className="description-line">
                 <div className="line-left">사업자 번호</div>
-                <div>xxx-xx-xxxxx</div>
+                <div>204-29-43709</div>
               </div>
               <div className="description-line">
                 <div className="line-left">대표연락</div>
@@ -2098,20 +2097,20 @@ function App() {
             </div>
             <div className="right-description">
               <div className="description-line">
-                <div className="line-left">상호명</div>
-                <div>유엄썸뷰티 대표자:이순미</div>
+                <div className="line-left">웹 관리자</div>
+                <div>김종휘</div>
               </div>
               <div className="description-line">
-                <div className="line-left">사업자 번호</div>
-                <div>xxx-xx-xxxxx</div>
+                <div className="line-left">웹 관리자</div>
+                <div>구관원</div>
               </div>
               <div className="description-line">
-                <div className="line-left">대표연락</div>
-                <div>0507-1318-5745</div>
+                <div className="line-left">연락처</div>
+                <div>010-9971-1540</div>
               </div>
               <div className="description-line">
-                <div className="line-left">주소</div>
-                <div>경기 의정부시 용민로 10 탑석자이정문상가 205-2호</div>
+                <div className="line-left">연락처</div>
+                <div>rksjsl92@gmail.com</div>
               </div>
             </div>
           </div>

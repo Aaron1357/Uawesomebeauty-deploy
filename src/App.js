@@ -370,7 +370,7 @@ body {
 
 .Logo-holder {
   padding-left: 0%;
-  padding-right: 10%;
+  padding-right: 6%;
 }
 .Logo {
   width: 190px;
@@ -380,11 +380,11 @@ body {
   
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 3%;
 }
 .menu {
   
-  font-size: 16px;
+  font-size: 15px;
   color: dimgrey;
   font-family: Elice-light;
   &:hover {
@@ -445,7 +445,7 @@ body {
   
   padding-top: 150px;
   background: mistyrose;
-  width: 100.8%;
+  width: 101.8%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -461,9 +461,9 @@ body {
 }
 .QnA-img{
    width: 50%;
-   height: 40%;
-   padding-left: 60px;
-   padding-right: 60px;
+   height: 50%;
+   padding-left: 25%;
+   padding-right: 25%;
    padding-bottom: 20px;
    
    &:hover {
@@ -474,6 +474,7 @@ body {
     transition: transform 0.5s ease;
   }
 }
+
 .QnA-welcome1{
    padding-top : 30px;
    padding-bottom: 20px;
@@ -490,13 +491,17 @@ body {
 .QnA-index{
   font-family: Elice;
   padding-bottom: 60px;
+  
 }
+
 .contact-index{
   word-break;
   display: flex;
   text-align: center;
   flex-direction: column;
   font-family: Elice-light;
+  font-size: 13px;
+  width: 50%;
 }
 .map-con{
   width: 100.8%;
@@ -515,7 +520,7 @@ body {
   margin-left: -0.3%;
   padding-top: 140px;
   background: mistyrose;
-  width: 100.8%;
+  width: 101.8%;
   height: 89vh;
   display: flex;
   flex-direction: column;
@@ -650,7 +655,7 @@ body {
   margin-bottom: -10px;
   padding-top: 30px;
   background: mistyrose;
-  width: 100.8%;
+  width: 101.8%;
   height: 13vh;
   display: flex;
   justify-content: center;
@@ -794,6 +799,7 @@ body {
 .QnA-con {
   
   padding-top: 120px;
+  margin-left: -0.3%;
   background: mistyrose;
   width: 103.2%;
   height: 89vh;
